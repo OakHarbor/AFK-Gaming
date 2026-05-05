@@ -1,0 +1,622 @@
+/*-- -------------------------- -->
+<---      Side By Side          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-2233 {
+        padding: var(--sectionPadding);
+        background-color: var(--primaryBg);
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        .cs-bottom-shape,
+        .cs-top-shape {
+            width: 100%;
+            height: 25%;
+            opacity: 0.5;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                object-position: center;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .cs-bottom-shape {
+            bottom: 0;
+            top: initial;
+
+            img {
+                bottom: 0;
+            }
+        }
+
+        .cs-graphic {
+            display: none;
+            position: absolute;
+            width: (244/16rem);
+            height: auto;
+            left: 50%;
+            margin-left: (710/16rem);
+            right: auto;
+            bottom: 0;
+        }
+
+        .cs-container {
+            position: relative;
+            width: 100%;
+            /* changes to 1280px at tablet */
+            max-width: (704/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to center if content needs to be centrally aligned */
+            text-align: left;
+            width: 100%;
+            max-width: (586/16rem);
+            display: flex;
+            flex-direction: column;
+            /* aligns content to the left, set to center to centrally align */
+            align-items: flex-start;
+
+            .cs-text:first-of-type {
+                font-size: (20/16rem);
+                color: var(--headerColor);
+                margin-bottom: 1rem;
+            }
+        }
+
+        .cs-text {
+            /* 24px - 32px */
+            margin-bottom: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        .cs-options {
+            width: 100%;
+            margin: 0 0 (32/16rem);
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cs-option {
+            list-style: none;
+            padding: (16/16rem) 0;
+            border-bottom: 1px solid #e8e8e8;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: (24/16rem);
+            position: relative;
+            z-index: 1;
+
+            &:first-of-type {
+                padding-top: 0;
+            }
+
+            &:last-of-type {
+                padding-bottom: 0;
+                border: none;
+            }
+        }
+
+        .cs-option-number {
+            font-size: (20/16rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            color: var(--headerColor);
+        }
+
+        .cs-option-text {
+            font-size: (20/16rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            color: var(--bodyTextColor);
+        }
+
+        .cs-button-solid {
+            margin: 0;
+            display: inline-block;
+        }
+
+        .cs-image-group {
+            /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
+            font-size: ~"min(2.3vw, .916rem)";
+            /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
+            width: (640/16em);
+            height: (762/16em);
+            order: -1;
+            position: relative;
+            /* prevents flexbox from squishing it */
+            flex: none;
+            margin-top: (40/16em);
+
+            .cs-frame-accent {
+                &:after {
+                    content: url("/assets/svgs/frame-1.svg");
+                    width: auto;
+                    height: auto;
+                    position: absolute;
+                    left: 2px;
+                    top: calc(-2.375em + 2px);
+                    z-index: 1;
+                }
+
+                &:before {
+                    content: url("/assets/svgs/frame-2.svg");
+                    width: auto;
+                    height: auto;
+                    position: absolute;
+                    right: 2px;
+                    bottom: calc(2.375em - 2px);
+                    z-index: 1;
+                }
+            }
+
+            &::before {
+                width: calc(100% - 4px);
+                height: calc(100% - 4px);
+                top: -(36/16em);
+                left: 2px;
+                bottom: 0;
+                content: "";
+                position: absolute;
+                background: var(--primaryBg);
+                z-index: -1;
+                clip-path: polygon(0 0, 95% 0, 100% 5%, 100% 80%, 100% 100%, 5% 100%, 0 95%, 0% 20%);
+            }
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                bottom: (38/16em);
+                position: absolute;
+                z-index: -2;
+                background: white;
+                clip-path: polygon(0 0, 95% 0, 100% 5%, 100% 80%, 100% 100%, 5% 100%, 0 95%, 0% 20%);
+            }
+        }
+
+        .cs-picture {
+            width: (560/16em);
+            height: (682/16em);
+            overflow: hidden;
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            clip-path: polygon(0 0, 97.5% 0, 100% 2.5%, 100% 80%, 100% 100%, 2.5% 100%, 0 97.5%, 0% 20%);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .cs-caption {
+            /* 20px - 31px */
+            font-size: clamp(1.25rem, 2vw, 1.625rem);
+            line-height: 1.2em;
+            text-align: center;
+            width: 63%;
+            max-width: (391/16rem);
+            margin: 0;
+            /* 24px - 40px */
+            padding: clamp(1.5rem, 2.2vw, 2rem) clamp(1.5rem, 1.8vw, 1.65rem);
+            background-color: var(--secondary);
+            color: var(--primaryBg);
+            font-family: var(--headerFont);
+            position: absolute;
+            z-index: 4;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .cs-stats {
+            width: 100%;
+            max-width: (1280/16rem);
+            /* 48px - 100px */
+            margin: clamp(3rem, 7vw, 6.25rem) auto 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+
+            row-gap: (8/16rem);
+            position: relative;
+        }
+
+        .cs-stat {
+            /* as the child .cs-number is absolutely positioned, it won't contribute to the size of the box */
+            /* we can set the height equal to the font-size which works around this */
+            /* 100px - 120px */
+            height: clamp(6.25rem, 11vw, 10rem);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            grid-column: span 6;
+            position: relative;
+        }
+
+        .cs-stat-number {
+            /* 100px - 120px */
+            font-size: clamp(5.25rem, 8vw, 6.875rem);
+            line-height: 1.2em;
+            margin: 0;
+            color: var(--primaryShade-30);
+            font-family: var(--headerFont);
+            display: block;
+        }
+
+        .cs-stat-text {
+            font-size: clamp(1rem, 1.5vw, 1.25rem);
+            font-weight: bold;
+            line-height: 1.2em;
+            margin: 0;
+            color: var(--bodyTextColor);
+            display: block;
+            text-align: center;
+            z-index: 2;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #sbs-2233 {
+        .cs-container {
+            max-width: (1280/16rem);
+            flex-direction: row;
+            align-items: stretch;
+        }
+
+        .cs-content {
+            /* 48px - 100px */
+            padding: clamp(3rem, 7vw, 6.25rem) 0;
+        }
+
+        .cs-image-group {
+            font-size: min(1vw, 1rem);
+            height: auto;
+            min-height: (645/16em);
+        }
+
+        .cs-picture {
+            height: auto;
+            top: 0;
+            bottom: (77/16em);
+        }
+
+        .cs-stats {
+            /* 24px - 64px */
+            column-gap: clamp(1.5rem, 9vw, 2rem);
+        }
+
+        .cs-stat {
+            grid-column: span 3;
+        }
+    }
+}
+
+@media only screen and (min-width: 80rem) {
+    #sbs-2233 {
+        .cs-graphic {
+            display: block;
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #RPsbs-2050,
+    #RPsbsr-2050 {
+        padding: var(--sectionPadding);
+        overflow: hidden;
+        position: relative;
+        background-color: var(--primaryBg);
+        z-index: 1;
+
+
+        .cs-container {
+            width: 100%;
+            /* changed to 1280px at desktop */
+            max-width: (550/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+            position: relative;
+        }
+
+        .cs-content {
+            /* set text align to center if content needs to be centrally aligned */
+            text-align: left;
+            width: 100%;
+            max-width: (617/16rem);
+            display: flex;
+            flex-direction: column;
+            /* aligns content to the left, set to center to centrally align */
+            align-items: flex-start;
+        }
+
+        .cs-text {
+            margin-bottom: (12/16rem);
+
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+
+        .cs-ul {
+            width: 100%;
+            margin: (24/16rem) 0 (32/16rem) 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: (12/16rem);
+        }
+
+        .cs-li {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            line-height: 1.5em;
+            list-style: none;
+            width: 100%;
+            color: var(--bodyTextColor);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: (8/16rem);
+        }
+
+        .cs-tick {
+            width: (20/16rem);
+            height: auto;
+            /* adds extra space between the icon and top of parent so it's more centered */
+            margin-top: 1px;
+            display: block;
+        }
+
+
+        .cs-ul-icons {
+            width: 100%;
+            max-width: (630/16rem);
+            /* 48px - 64px */
+            margin: clamp(3rem, 6vw, 4rem) 0 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: (32/16rem);
+        }
+
+        .cs-li-icons {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            padding-bottom: (32/16rem);
+            border-bottom: 1px solid rgba(72, 72, 72, 0.4);
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: (20/16rem);
+
+            &:last-of-type {
+                padding: 0;
+                border: none;
+            }
+        }
+
+        .cs-icon {
+            width: (48/16rem);
+            height: auto;
+            display: block;
+        }
+
+        .cs-h3 {
+            /* 20px - 25px */
+            font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            text-align: left;
+            margin: 0 0 (16/16rem) 0;
+            color: var(--bodyTextColorWhite);
+        }
+
+        .cs-li-text {
+            /* 14px - 16px */
+            font-size: (16/16rem);
+            line-height: 1.5em;
+            text-align: left;
+            margin: 0;
+            color: var(--bodyTextColorWhite);
+            opacity: 0.8;
+        }
+
+        .cs-image-group {
+            /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
+            font-size: ~"min(2.3vw, .916rem)";
+            /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
+            width: (640/16em);
+            height: (762/16em);
+            order: -1;
+            position: relative;
+            /* prevents flexbox from squishing it */
+            flex: none;
+            margin-top: (40/16em);
+
+            .cs-frame-accent {
+                &:after {
+                    content: url("/assets/svgs/frame-1.svg");
+                    width: auto;
+                    height: auto;
+                    position: absolute;
+                    left: 2px;
+                    top: calc(-2.375em + 2px);
+                    z-index: 1;
+                }
+
+                &:before {
+                    content: url("/assets/svgs/frame-2.svg");
+                    width: auto;
+                    height: auto;
+                    position: absolute;
+                    right: 2px;
+                    bottom: calc(2.375em - 2px);
+                    z-index: 1;
+                }
+            }
+
+            &::before {
+                width: calc(100% - 4px);
+                height: calc(100% - 4px);
+                top: -(36/16em);
+                left: 2px;
+                bottom: 0;
+                content: "";
+                position: absolute;
+                background: var(--primaryBg);
+                z-index: -1;
+                clip-path: polygon(0 0, 95% 0, 100% 5%, 100% 80%, 100% 100%, 5% 100%, 0 95%, 0% 20%);
+            }
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                bottom: (38/16em);
+                position: absolute;
+                z-index: -2;
+                background: white;
+                clip-path: polygon(0 0, 95% 0, 100% 5%, 100% 80%, 100% 100%, 5% 100%, 0 95%, 0% 20%);
+            }
+        }
+
+        .cs-picture {
+            width: (560/16em);
+            height: calc(100% - 5em);
+            overflow: hidden;
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            clip-path: polygon(0 0, 97.5% 0, 100% 2.5%, 100% 80%, 100% 100%, 2.5% 100%, 0 97.5%, 0% 20%);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .cs-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.08;
+            z-index: -1;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .cs-box {
+            text-align: left;
+            //  width: 100%;
+            max-width: 100%;
+            /* prevents padding from affecting height and width */
+            box-sizing: border-box;
+            padding: (32/16rem);
+            background-color: var(--primaryShade-10);
+            position: absolute;
+            left: clamp(1rem, 10vw, 4rem);
+            right: clamp(1rem, 10vw, 4rem);
+            bottom: calc(5em + 2rem);
+            z-index: 1;
+        }
+
+        .cs-box-icon {
+            width: (60/16rem);
+            height: auto;
+            margin: 0 0 (16/16rem);
+            display: block;
+        }
+
+        .cs-box-number {
+            font-size: (31/16rem);
+            line-height: 1.2em;
+            font-family: var(--headerFont);
+            margin: 0 0 (12/16rem);
+            color: var(--headerColor);
+            display: block;
+        }
+
+        .cs-box-desc {
+            font-size: (16/16rem);
+            line-height: 1.5em;
+            color: var(--bodyTextColor);
+            display: block;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #RPsbs-2050,
+    #RPsbsr-2050 {
+        .cs-container {
+            max-width: (1280/16rem);
+            flex-direction: row-reverse;
+            align-items: stretch;
+            justify-content: flex-end;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cs-image-group {
+            font-size: min(1vw, 1rem);
+            height: auto;
+            min-height: (705/16em);
+        }
+    }
+}

@@ -1,0 +1,105 @@
+---
+description: "Meta description for the page"
+image: "OPTIONAL - If an image path is specified here, it will be used for that page's OG image. Useful for blog posts (implemented as standard with this kit)"
+eleventyComputed:
+  title: "{{ page.fileSlug | titleCase }} | {{ client.name }} | {{ client.address.city }}, {{ client.address.state }}"
+  permalink: "/{{ page.fileSlug | slugify }}/"
+---
+
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    
+    <link rel="stylesheet" href="/assets/css/{{ page.fileSlug }}.css">
+
+    <!-- Any page-specific tags that belong in the <head> -->
+
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Contact Us</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/contact/" class="cs-link cs-active">Contact Us</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" alt="AFK Mobile Arcade trailer parked in neon-lit cityscape" width="1920" height="550" loading="lazy" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                   Contact                    -->
+    <!-- ============================================ -->
+
+    <section id="contact-2320">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Contact Us</span>
+                <h1 class="cs-title">Book Your Next Event</h1>
+                <p class="cs-text">
+                    When it comes to offering a unique experience at your next Greensboro, North Carolina event, it’s hard to go wrong with our team at AFK Mobile Arcade. Our gaming trailer comes right to you, bringing the latest consoles and games along with us. We have helped our customers celebrate birthdays, weddings, community events, school events, fundraisers, church functions, and more. Our mobile arcade is decorated with fun and comfort in mind, with room for up to 23 players at one time, cool lighting, and a futuristic design. It’s also the perfect option for outdoor events, as our truck offers weatherproof fun, along with heating and AC so we can operate all year round. Contact us today to learn more.
+                </p>
+              
+                <!--Form-->
+                <form class="cs-form" id="cs-form-323-2320" name="Contact Form" method="post">
+                    <label class="cs-label">
+                        Name
+                        <input class="cs-input" required type="text" name="name" placeholder="Name">
+                    </label>
+                    <label class="cs-label cs-email">
+                        Email
+                        <input class="cs-input" required type="email" name="email" placeholder="Email">
+                    </label>
+                    <label class="cs-label cs-phone">
+                        Phone
+                        <input class="cs-input" required type="tel" name="phone" placeholder="Phone">
+                    </label>
+                    <label class="cs-label cs-services">
+                        Services
+                        <select class="cs-input" name="Services">
+                            <option value="" disabled selected>Select a Service</option>
+                            <option value="New Construction">New Construction</option>
+                            <option value="Remodels">Remodels</option>
+                            <option value="Cabinets">Cabinets</option>
+                        </select>
+                    </label>
+                    <label class="cs-label">
+                        Message
+                        <textarea class="cs-input cs-textarea" required name="Message" placeholder="Write message..."></textarea>
+                    </label>
+                    <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+                </form>
+            </div>
+             <div class="cs-image-group">
+                 <div class="cs-picture">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34519577.190794215!2d-111.58038470821496!3d31.666319031304248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6e1475f47411418d%3A0xb078b7af09636416!2sAFK%20Mobile%20Arcade!5e1!3m2!1sen!2sca!4v1778009099532!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <p class="cs-caption">Greensboro <br/> North Carolina</p>
+                <div class="cs-frame-accent" aria-hidden="true"></div>
+            </div>
+        </div>
+    </section>
+    
+
+    {% include 'sections/cta.html' %} 
+
+{% endblock %}

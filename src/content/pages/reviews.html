@@ -1,0 +1,228 @@
+---
+description: "Meta description for the page"
+image: "OPTIONAL - If an image path is specified here, it will be used for that page's OG image. Useful for blog posts (implemented as standard with this kit)"
+eleventyComputed:
+  title: "{{ page.fileSlug | titleCase }} | {{ client.name }} | {{ client.address.city }}, {{ client.address.state }}"
+  permalink: "/{{ page.fileSlug | slugify }}/"
+---
+
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    
+    <link rel="stylesheet" href="/assets/css/{{ page.fileSlug }}.css">
+
+    <!-- Any page-specific tags that belong in the <head> -->
+
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Reviews</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/reviews/" class="cs-link cs-active">Reviews</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" alt="AFK Mobile Arcade trailer parked in neon-lit cityscape" width="1920" height="550" loading="lazy" decoding="async">
+        </picture>
+    </div>
+
+       <!-- ============================================ -->
+    <!--                  Reviews                     -->
+    <!-- ============================================ -->
+
+    <section id="reviews-2354">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">What They Say</span>
+                <h2 class="cs-title">Families Love AFK Arcade</h2>
+            </div>                  
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-featured">Extremely Cool Environment</span>
+                    <p class="cs-item-text">
+                        Lots of popular options to play. the owner was very cool as well. sanitizer at the door mandatory, which i love. overall a very great experience & i will be recommending to anyone who’s having a party! even adults.
+                    </p>
+                    <div class="cs-info">
+                        <picture class="cs-profile-wrapper">
+                            <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo icon" width="80" height="52">
+                        </picture>
+                        <span class="cs-name">
+                            ThatNovo Guy
+                            <span class="cs-desc">Gamer</span>
+                        </span>
+                    </div>
+                    <img class="cs-quote" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="quote" width="86" height="69">
+                </li>
+                <li class="cs-item">
+                    <span class="cs-featured">Professional and Patient</span>
+                    <p class="cs-item-text">
+                        AFK Mobile Arcade came to my school for a special incentive for our students here on time (HOT) party. Vince was very professional and patient. Reach out to him for all your gaming needs. He will travel to you. Highly recommended!
+                    <div class="cs-info">
+                        <picture class="cs-profile-wrapper">
+                           <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo icon" width="80" height="52">
+                        </picture>
+                        <span class="cs-name">
+                            Sidnell Harris
+                            <span class="cs-desc">Parent</span>
+                        </span>
+                    </div>
+                    <img class="cs-quote" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="quote" width="86" height="69">
+                </li>
+                 <li class="cs-item">
+                    <span class="cs-featured">Amazing Gaming Experience</span>
+                    <p class="cs-item-text">
+                        We had an amazing experience using the gaming truck for my son’s birthday party! The truck arrived ahead of time, was super clean, and packed with awesome games that kept all the kids entertained the entire party. The setup was perfect, and there was something for every age group.
+                    </p>
+
+                    <div class="cs-info">
+                        <picture class="cs-profile-wrapper">
+                            <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo icon" width="80" height="52">
+                        </picture>
+                        <span class="cs-name">
+                            Carla Johnson
+                            <span class="cs-desc">Parent</span>
+                        </span>
+                    </div>
+                    <img class="cs-quote" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="quote" width="86" height="69">
+                </li>
+                 <li class="cs-item">
+                    <span class="cs-featured">My Kids Loved It</span>
+                    <p class="cs-item-text">
+                        The kids had a great time in the game truck! I would highly recommend AFK Mobile Arcade!
+                    </p>
+
+                    <div class="cs-info">
+                        <picture class="cs-profile-wrapper">
+                            <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo icon" width="80" height="52">
+                        </picture>
+                        <span class="cs-name">
+                            Michael Garner
+                            <span class="cs-desc">Parent</span>
+                        </span>
+                    </div>
+                    <img class="cs-quote" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="quote" width="86" height="69">
+                </li>
+                 <li class="cs-item">
+                    <span class="cs-featured">Great For All Ages</span>
+                    <p class="cs-item-text">
+                        This is a great entertainment option for all ages!! We have used this as an incentive for 2 years and my students love coming to mobile arcade!
+                    </p>
+
+                    <div class="cs-info">
+                        <picture class="cs-profile-wrapper">
+                            <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo icon" width="80" height="52">
+                        </picture>
+                        <span class="cs-name">
+                            Jenna Bocock
+                            <span class="cs-desc">Teacher</span>
+                        </span>
+                    </div>
+                    <img class="cs-quote" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="quote" width="86" height="69">
+                </li>
+                 <li class="cs-item">
+                    <span class="cs-featured">Amazing Mobile Arcade</span>
+                    <p class="cs-item-text">
+                        Great experience with this mobile arcade. I have been in a few and I must say I am extremely impressed with this one! The inside is super spacious, the gaming systems are all up to date, and the air conditioning makes it an enjoyable summer experience in all this heat! These business owners made my son’s 16th birthday one to remember! They were very professional and super pleasant to do business with. I look forward to business in the future with this company!
+                    </p>
+
+                    <div class="cs-info">
+                        <picture class="cs-profile-wrapper">
+                            <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo icon" width="80" height="52">
+                        </picture>
+                        <span class="cs-name">
+                            Ebony McCain
+                            <span class="cs-desc">Parent</span>
+                        </span>
+                    </div>
+                    <img class="cs-quote" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="quote" width="86" height="69">
+                </li>
+                 <li class="cs-item">
+                    <span class="cs-featured">Amazing For Preschool</span>
+                    <p class="cs-item-text">
+                        Our preschool class has an amazing time with the mobile arcade! Thank you so much.
+                    </p>
+
+                    <div class="cs-info">
+                        <picture class="cs-profile-wrapper">
+                            <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo icon" width="80" height="52">
+                        </picture>
+                        <span class="cs-name">
+                            Ariel Pierce
+                            <span class="cs-desc">Preschool Teacher</span>
+                        </span>
+                    </div>
+                    <img class="cs-quote" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="quote" width="86" height="69">
+                </li>
+                 <li class="cs-item">
+                    <span class="cs-featured">Awesome For Children</span>
+                    <p class="cs-item-text">
+                        My grand children had the time of their life playing games in this mobile arcade. This is such a great idea for any event.
+                    </p>
+
+                    <div class="cs-info">
+                        <picture class="cs-profile-wrapper">
+                            <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo icon" width="80" height="52">
+                        </picture>
+                        <span class="cs-name">
+                            RED ROSE5
+                            <span class="cs-desc">Grandparent</span>
+                        </span>
+                    </div>
+                    <img class="cs-quote" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="quote" width="86" height="69">
+                </li>
+                 <li class="cs-item">
+                    <span class="cs-featured">Boys Had A Blast</span>
+                    <p class="cs-item-text">
+                        My boys had the opportunity to play video games during an event and they had a blast. We couldn’t get them to leave. AFK Mobile Arcade made their day!
+                    </p>
+
+                    <div class="cs-info">
+                        <picture class="cs-profile-wrapper">
+                            <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo icon" width="80" height="52">
+                        </picture>
+                        <span class="cs-name">
+                            Janette Lewis
+                            <span class="cs-desc">Parent</span>
+                        </span>
+                    </div>
+                    <img class="cs-quote" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="quote" width="86" height="69">
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c24.jpg" | resize({ width: 576, height: 576 }) | avif %}" type="image/avif">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c24.jpg" | resize({ width: 1686, height: 1844 }) | avif %}" type="image/avif">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c24.jpg" | resize({ width: 1910, height: 1576 }) | avif %}" type="image/avif">
+                        <img src="{% getUrl "/assets/images/c24.jpg" | resize({ width: 1910, height: 1576 }) | jpeg %}" alt="Illustrated figure with VR headset in neon cityscape" width="955" height="788" loading="lazy" decoding="async">
+                    </picture>
+                </li>
+            </ul>
+            <a class="cs-button-solid" href="{{client.socials.google}}">Read More Reviews on Google</a>
+        </div>
+    </section>
+                  
+    {% include 'sections/cta.html' %} 
+
+{% endblock %}
