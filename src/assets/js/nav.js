@@ -18,6 +18,7 @@
 		CLASSES: {
 			active: "cs-active",
 			menuOpen: "cs-open",
+ 			scroll: "scroll",
 		},
 	};
 
@@ -29,6 +30,26 @@
 		menuWrapper: document.querySelector(CONFIG.SELECTORS.menuWrapper),
 		navButton: document.querySelector(CONFIG.SELECTORS.navButton),
 		darkModeToggle: document.querySelector(CONFIG.SELECTORS.darkModeToggle),
+	};
+
+		// Scroll Effects Management
+	const scrollManager = {
+		handleScrollEffects() {
+			const scrollPosition = document.documentElement.scrollTop;
+			const isScrolled = scrollPosition >= 100;
+
+			elements.body.classList.toggle(CONFIG.CLASSES.scroll, isScrolled);
+
+			// Make top social elements inert when scrolled at all breakpoints
+			if (elements.topSocial) {
+				elements.topSocial.inert = isScrolled;
+			}
+
+			// Make dark mode toggle inert on mobile (650px) when scrolled, but not on tablet+
+			if (elements.darkModeToggle) {
+				elements.darkModeToggle.inert = isDarkModeMobile() && isScrolled;
+			}
+		},
 	};
 
 	// Utilities
@@ -234,6 +255,7 @@
 			// Global events
 			document.addEventListener("keydown", (e) => e.key === "Escape" && keyboardManager.handleEscape());
 			document.addEventListener("focusin", eventManager.handleMobileFocus);
+ 			document.addEventListener("scroll", () => scrollManager.handleScrollEffects());
 
 			// Resize handling
 			window.addEventListener("resize", () => {

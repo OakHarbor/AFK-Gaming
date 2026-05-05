@@ -1,6 +1,6 @@
 ---
-title: "Pixel Perfect Websites | Code Stitch Web Designs | Denver, CO"
-description: "Meta description for the page"
+title: "The Ultimate Mobile Gaming Experience in Greensboro, NC | AFK Mobile Arcade"
+description: " Mobile Arcade brings the ultimate gaming experience to you — packed with the latest consoles, VR, and massive screens. Perfect for birthday parties, school events, and more. Book today!"
 permalink: "/"
 tags: "sitemap" # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
 ---
@@ -10,6 +10,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 {% block head %}
     <!-- Critical styles are loaded first -->
     <link rel="stylesheet" href="/assets/css/critical.css"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/hero.png" | resize({ width: 640, height: 1400 }) | avif %}" />
 
     <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
     {% if client.isProduction %}
@@ -28,156 +29,251 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 {% endblock %}
 
 {% block body %}
-
     <!-- ============================================ -->
     <!--                    Hero                      -->
     <!-- ============================================ -->
 
-    <section id="hero-143">
+    <section id="hero-1950">
         <div class="cs-container">
-            <span class="cs-topper">CodeStitch Presents</span>
-            <h1 class="cs-title">
-                The Intermediate Website Kit (LESS)
-            </h1>
-            <p class="cs-text">
-                Building faster websites, faster. Just clone, update _data/client.js, swap out some sections, and away you go!
-            </p>
-            <a href="/contact/" class="cs-button-solid">Get in Touch</a>
+            <div class="cs-content">
+                <h1 class="cs-title">Your Arcade <br /> is on the way!</h1>
+                <div class="cs-flex-group">
+                    <p class="cs-text">We bring the ultimate gaming experience straight to your door — packed with the latest consoles, immersive VR, and endless multiplayer fun for everyone.</p>
+                    <a href="/contact/" class="cs-button-solid">Book Now!</a>
+                </div>
+            </div>
         </div>
-
-        <!-- Background Image -->
+        
         <picture class="cs-background">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 1490 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 1490 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 1490 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 640, height: 1400 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 640, height: 1400 }) | png %}" type="image/png">
             <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 2048, height: 1600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 2048, height: 1600 }) | png %}" type="image/png">
             <!--Large Tablet Image-->
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 1024px) and (max-width: 1600px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 2500, height: 1407 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px) and (max-width: 1600px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 2500, height: 1407 }) | png %}" type="image/png">
             <!--Desktop Image-->
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | jpeg %}" alt="kitchen" width="1" height="1" loading="eager" decoding="async">
+            <source media="(min-width: 1600px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 1, height: 1 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1600px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 1, height: 1 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/hero.png" | resize({ width: 1, height: 1 }) | png %}" alt="mobile gaming trailer pulling in parking lot" width="1" height="1" decoding="async">
         </picture>
     </section>
 
     <!-- ============================================ -->
-    <!--                   Services                   -->
+    <!--                Side By Side                  -->
     <!-- ============================================ -->
 
-    <section id="h-services-143">
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s1.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Full Kitchen Remodel
-                </h2>
+    <section id="sbs-2233">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Who We Are</span>
+                <h2 class="cs-title">Greensboro's Favorite Mobile Gaming Truck Experience</h2>
+                <p class="cs-text">AFK Mobile Arcade brings a fully loaded game truck right to your event, anywhere in the Greensboro area.</p>
                 <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    We believe every celebration deserves something unforgettable. That's why we built a mobile gaming experience that's fun for all ages — from energetic kids to competitive adults — delivered right to your doorstep with zero hassle.
                 </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s2.svg" alt="icon" width="52" height="52" aria-hidden="true">
+                <a href="/about/" class="cs-button-solid">Learn More About Us</a>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c1.jpg" | resize({ width: 516, height: 628 }) | avif %}" type="image/avif">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c1.jpg" | resize({ width: 716, height: 1020 }) | avif %}" type="image/avif">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c1.jpg" | resize({ width: 1120, height: 1136 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/c1.jpg" | resize({ width: 1120, height: 1136 }) | jpeg %}" alt="Kids playing video games inside mobile gaming trailer" width="560" height="568" loading="lazy" decoding="async">
                 </picture>
-                <h2 class="cs-title">
-                    Exterior Repairs
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s3.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Utility Maintenance
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s4.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Design Consultation
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </li>
+                <p class="cs-caption">More Than Just <br/> a Game Truck</p>
+                <div class="cs-frame-accent" aria-hidden="true"></div>
+            </div>
+            <img class="cs-graphic" src="/assets/images/graphic-1.png" alt="arcade console" aria-hidden="true" width="411" height="244" />
+        </div>
+        <ul class="cs-stats">
+            <div class="cs-stat">
+                <p class="cs-stat-number">500+</p>
+                <p class="cs-stat-text">Events Successfully Hosted</p>
+            </div>
+            <div class="cs-stat">
+                <p class="cs-stat-number">50+</p>
+                <p class="cs-stat-text">Games in Our Library</p>
+            </div>
+            <div class="cs-stat">
+                <p class="cs-stat-number">5.0</p>
+                <p class="cs-stat-text">Average Google Review Rating</p>
+            </div>
+            <div class="cs-stat">
+                <p class="cs-stat-number">24</p>
+                <p class="cs-stat-text">Players at One Time</p>
+            </div>
         </ul>
+        <picture class="cs-top-shape">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 664 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 664 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 464 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 464 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 398 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 398 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 398 }) | png %}" alt="" width="1920" height="306" loading="lazy" decoding="async">
+        </picture>
+
+        <picture class="cs-bottom-shape">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 640, height: 664 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 640, height: 664 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2048, height: 464 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2048, height: 464 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 398 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 398 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 398 }) | png %}" alt="" width="1920" height="306" loading="lazy" decoding="async">
+        </picture>
     </section>
 
     <!-- ============================================ -->
-    <!--                 Side By Side                 -->
+    <!--                  Services                    -->
     <!-- ============================================ -->
 
-    <section id="RPsbs-313">
+    <section id="services-2198">
         <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-image-group">
-                <picture class="cs-picture cs-picture1">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" loading="lazy" decoding="async">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy" decoding="async">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
             <div class="cs-content">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">
-                    About Stitch Law
-                </h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-quote">
-                    <span class="cs-quote-text">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </span>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="gavel" width="136" height="77">
+                
+                <div class="cs-flex">
+                    <span class="cs-topper">Events We Cover</span>
+                    <h2 class="cs-title">We Show Up for Every Occasion</h2>
                 </div>
-                <a href="/about/" class="cs-button-solid">About Us</a>
-            </div>
+
+                <p class="cs-text">Whether it's a birthday bash, a school festival, or a corporate team-builder, AFK Mobile Arcade delivers an exciting, stress-free gaming experience tailored to fit your event perfectly.</p>
+            </div>                  
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c2.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c2.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c2.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c2.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="Animated children in colorful pixel-art game world" width="413" height="340" loading="lazy" decoding="async">
+                            <div class="cs-frame-accent" aria-hidden="true"></div>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Birthday Parties</h3>
+                        </div>
+                        <p class="cs-item-text">
+                            Transform your kid's special day into an unforgettable and truly epic gaming adventure that they'll be talking about for many exciting and joyful years to come.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c3.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c3.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c3.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c3.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="AFK Mobile Arcade truck and trailer in parking lot" width="413" height="340" loading="lazy" decoding="async">
+                            <div class="cs-frame-accent" aria-hidden="true"></div>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">School Events</h3>
+                        </div>
+                        <p class="cs-item-text">
+                            From exciting field days to vibrant fall festivals, we bring engaging, student-approved entertainment that both teachers and kids absolutely love and enjoy.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c4.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c4.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c4.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c4.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="Large group of children posing before gaming trailer" width="413" height="340" loading="lazy" decoding="async">
+                            <div class="cs-frame-accent" aria-hidden="true"></div>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Corporate Events</h3>
+                        </div>
+                        <p class="cs-item-text">
+                            Boost team morale and make your next company event truly memorable with a fun, competitive, and inclusive gaming experience for everyone involved.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c5.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c5.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c5.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c5.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="Glowing neon gothic cathedral under starry night sky" width="413" height="340" loading="lazy" decoding="async">
+                            <div class="cs-frame-accent" aria-hidden="true"></div>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Church Events</h3>
+                        </div>
+                        <p class="cs-item-text">
+                            Create stronger community bonds with wholesome, family-friendly gaming entertainment that's perfect for youth groups and congregation gatherings alike.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c6.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c6.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c6.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c6.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="Futuristic neon-lit arcade hallway with glowing portal" width="413" height="340" loading="lazy" decoding="async">
+                            <div class="cs-frame-accent" aria-hidden="true"></div>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Non-Profit Events</h3>
+                        </div>
+                        <p class="cs-item-text">
+                            Support your important cause while keeping attendees thoroughly entertained. Our game truck is a crowd-pleasing addition to any fundraiser or charity event you organize.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c7.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="People exploring vibrant neon arcade in digital illustration" width="413" height="340" loading="lazy" decoding="async">
+                            <div class="cs-frame-accent" aria-hidden="true"></div>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Other Events</h3>
+                        </div>
+                        <p class="cs-item-text">
+                            Have something truly unique and exciting in mind? We're incredibly flexible and love a good challenge — reach out and let's make it happen together, step by step.
+                        </p>
+                    </a>
+                </li>
+            </ul>
+            <a href="/services/" class="cs-button-solid">Explore All Event Types</a>
         </div>
     </section>
 
@@ -185,278 +281,687 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
     <!--             Side By Side Reverse             -->
     <!-- ============================================ -->
 
-    <section id="RPsbsr-313">
+    <section id="RPsbsr-2050">
         <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-image-group">
-                <picture class="cs-picture cs-picture1">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" loading="lazy" decoding="async">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy" decoding="async">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
             <div class="cs-content">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">
-                    About Stitch Law
-                </h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <a href="/about/" class="cs-button-solid">About Us</a>
+                <span class="cs-topper">Why Choose Us</span>
+                <h2 class="cs-title">The Ultimate Gaming Party Comes to You</h2>
+                <ul class="cs-ul-icons">
+                    <li class="cs-li-icons">
+                        <img class="cs-icon" aria-hidden="true" src="/assets/svgs/s1.svg" decoding="async" alt="icon" width="48" height="48" loading="lazy">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Self-Powered & Self-Sufficient</h3>
+                            <p class="cs-li-text">
+                                Our truck runs on its own generator — no power hookups needed, so we can park and play virtually anywhere you need us.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-li-icons">
+                        <img class="cs-icon" aria-hidden="true" src="/assets/svgs/s2.svg" decoding="async" alt="icon" width="48" height="48" loading="lazy">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">All-Weather Gaming, Year Round</h3>
+                            <p class="cs-li-text">
+                                Rain, shine, or snow — our climate-controlled truck keeps every player comfortable with full heating and air conditioning no matter the season.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-li-icons">
+                        <img class="cs-icon" aria-hidden="true" src="/assets/svgs/s3.svg" decoding="async" alt="icon" width="48" height="48" loading="lazy">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Massive Multiplayer Capacity</h3>
+                            <p class="cs-li-text">
+                                With room for up to 23 players at once, nobody gets left out. Everyone gets a controller and a spot in the action.
+                            </p>
+                        </div>
+                    </li>
+                     <li class="cs-li-icons">
+                        <img class="cs-icon" aria-hidden="true" src="/assets/svgs/s4.svg" decoding="async" alt="icon" width="48" height="48" loading="lazy">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Latest Consoles & VR Gaming</h3>
+                            <p class="cs-li-text">
+                                We're stocked with PS5, Nintendo Switch 2, and PSVR2 — plus an ever-growing library of multiplayer titles and virtual reality experiences.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c8.jpg" | resize({ width: 516, height: 628 }) | avif %}" type="image/avif">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c8.jpg" | resize({ width: 716, height: 1526 }) | avif %}" type="image/avif">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c8.jpg" | resize({ width: 1120, height: 1344 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/c8.jpg" | resize({ width: 1120, height: 1344 }) | jpeg %}" alt="Gaming trailer interior with multiple lit video game screens" width="560" height="672" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-box">
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/s5.svg" alt="icon" width="60" height="60">
+                    <span class="cs-box-number">We Run the Party for You</span>
+                    <span class="cs-box-desc">
+                        Sit back and relax while our dedicated team handles everything on-site, keeping the games rolling and the energy high from start to finish.
+                    </span>
+                </div>                    
+                <div class="cs-frame-accent" aria-hidden="true"></div>
             </div>
         </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c9.jpg" | resize({ width: 640, height: 3278 }) | avif %}" type="image/avif">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c9.jpg" | resize({ width: 2048, height: 2000 }) | avif %}" type="image/avif">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c9.jpg" | resize({ width: 2500, height: 1396 }) | avif %}" type="image/avif">
+            <img src="{% getUrl "/assets/images/c9.jpg" | resize({ width: 2500, height: 1396 }) | jpeg %}" alt="Retro neon grid corridor with glowing purple buildings" width="1920" height="1072" loading="lazy" decoding="async">
+        </picture>
     </section>
+                             
+    <!-- ============================================ -->
+    <!--                    CTA                       -->
+    <!-- ============================================ -->
 
+    <section id="cta-403">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h2 class="cs-title">Ready to Level <br /> Up Today?</h2>
+                <p class="cs-text">
+                    Stop stressing about entertainment. AFK Mobile Arcade handles everything so you can enjoy your event. Check out our simple, affordable pricing and lock in your date before it's gone.
+                </p>
+                <a href="/pricing/" class="cs-button-solid">View Our Pricing</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c10.jpg" | resize({ width: 640, height: 864 }) | avif %}" type="image/avif">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c10.jpg" | resize({ width: 2048, height: 912 }) | avif %}" type="image/avif">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c10.jpg" | resize({ width: 2500, height: 747 }) | avif %}" type="image/avif">
+            <img src="{% getUrl "/assets/images/c10.jpg" | resize({ width: 2500, height: 747 }) | jpeg %}" alt="Smiling boy giving peace sign in gaming trailer" width="1920" height="574" loading="lazy" decoding="async">
+        </picture>
+    </section>
+                                
     <!-- ============================================ -->
     <!--                   Gallery                    -->
     <!-- ============================================ -->
 
-    <section id="gallery-48">
+    <section id="gallery-2297">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Our Portfolio</span>
-                <h2 class="cs-title">
-                    Et orci volutpat, back up generator installations
-                </h2>
+                <span class="cs-topper">Games We Carry</span>
+                <h2 class="cs-title">Fan Favorites Ready for Your Event</h2>
             </div>
-            <div class="cs-image-group">
-                <div class="cs-row cs-row-1">
-                    <!-- Row 1-->
-                    <picture class="cs-picture cs-picture-1">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 182, height: 250 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 182, height: 250 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 182, height: 250 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 634, height: 798 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 634, height: 798 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 634, height: 798 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 826, height: 1134 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 826, height: 1134 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 826, height: 1134 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 826, height: 1134 }) | jpeg %}" alt="new hallway" width="413" height="567" loading="lazy" decoding="async">
-                    </picture>
-                    <picture class="cs-picture cs-picture-2">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 634, height: 886 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 634, height: 886 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 826, height: 1258 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" alt="new home construction" width="413" height="629" loading="lazy" decoding="async">
-                    </picture>
-                    <picture class="cs-picture cs-picture-3">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 182, height: 226 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 182, height: 226 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 182, height: 226 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 634, height: 720 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 634, height: 720 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 634, height: 720 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 826, height: 1024 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 826, height: 1024 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 826, height: 1024 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 826, height: 1024 }) | jpeg %}" alt="building a new wall" width="413" height="512" loading="lazy" decoding="async">
-                    </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <picture class="cs-picture cs-picture-1">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 182, height: 216 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 182, height: 216 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 182, height: 216 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 634, height: 692 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 634, height: 692 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 634, height: 692 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 826, height: 984 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 826, height: 984 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 826, height: 984 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 826, height: 984 }) | jpeg %}" alt="new kitchen" width="413" height="492" loading="lazy" decoding="async">
-                    </picture>
-                    <picture class="cs-picture cs-picture-2">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 182, height: 228 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 182, height: 228 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 182, height: 228 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 634, height: 728 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 634, height: 728 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 634, height: 728 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 826, height: 1034 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 826, height: 1034 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 826, height: 1034 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 826, height: 1034 }) | jpeg %}" alt="apartment addition" width="413" height="517" loading="lazy" decoding="async">
-                    </picture>
-
-                    <picture class="cs-picture cs-picture-3">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 634, height: 886 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 634, height: 886 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 826, height: 1258 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" alt="kew kitchen cabinets" width="413" height="629" loading="lazy" decoding="async">
-                    </picture>
-
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <picture class="cs-picture cs-picture-1">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 634, height: 880 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 634, height: 880 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 634, height: 880 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 826, height: 1250 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 826, height: 1250 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 826, height: 1250 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 826, height: 1250 }) | jpeg %}" alt="new black window structure" width="413" height="625" loading="lazy" decoding="async">
-                    </picture>
-                    <picture class="cs-picture cs-picture-2">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 182, height: 198 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 182, height: 198 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 182, height: 198 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 634, height: 636 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 634, height: 636 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 634, height: 636 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 826, height: 904 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 826, height: 904 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 826, height: 904 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 826, height: 904 }) | jpeg %}" alt="kitchen rebovation" width="413" height="452" loading="lazy" decoding="async">
-                    </picture>
-
-                    <picture class="cs-picture cs-picture-3">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 634, height: 886 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 634, height: 886 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 826, height: 1258 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" alt="bathroom renovation" width="413" height="629" loading="lazy" decoding="async">
-                    </picture>
-
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+            <div class="cs-gallery-wrapper">
+                <!--Gallery 1-->
+                <div class="cs-gallery">
+                    <!--Picture 1-->
+                    <a class="cs-image" href="">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c11.jpg" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c11.jpg" | resize({ width: 640, height: 716 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c11.jpg" | resize({ width: 826, height: 1048 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c11.jpg" | resize({ width: 826, height: 1048 }) | jpeg %}" alt="Fortnite video game promotional poster with four characters" width="413" height="524" loading="lazy" decoding="async">
+                        </picture>
+                        <div class="cs-info">
+                            <span class="cs-tag">Red Station</span>
+                            <span class="cs-project">Street Fighter 6</span>
+                        </div>
+                    </a>
+                    <a class="cs-image" href="">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c12.jpg" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c12.jpg" | resize({ width: 640, height: 716 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c12.jpg" | resize({ width: 826, height: 1048 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c12.jpg" | resize({ width: 826, height: 1048 }) | jpeg %}" alt="Roblox logo surrounded by various game thumbnails" width="413" height="524" loading="lazy" decoding="async">
+                        </picture>
+                        <div class="cs-info">
+                            <span class="cs-tag">Red Station</span>
+                            <span class="cs-project">Street Fighter 6</span>
+                        </div>
+                    </a>
+                    <a class="cs-image" href="">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c13.jpg" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c13.jpg" | resize({ width: 640, height: 716 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c13.jpg" | resize({ width: 826, height: 1048 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c13.jpg" | resize({ width: 826, height: 1048 }) | jpeg %}" alt="Madden NFL 26 video game cover art" width="413" height="524" loading="lazy" decoding="async">
+                        </picture>
+                        <div class="cs-info">
+                            <span class="cs-tag">Red Station</span>
+                            <span class="cs-project">Street Fighter 6</span>
+                        </div>
+                    </a>
+                    <a class="cs-image" href="">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c14.webp" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c14.webp" | resize({ width: 640, height: 716 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c14.webp" | resize({ width: 826, height: 1048 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c14.webp" | resize({ width: 826, height: 1048 }) | jpeg %}" alt="Mario riding kart surrounded by racers in dust" width="413" height="524" loading="lazy" decoding="async">
+                        </picture>
+                       <div class="cs-info">
+                            <span class="cs-tag">Red Station</span>
+                            <span class="cs-project">Street Fighter 6</span>
+                        </div>
+                    </a>
+                    <a class="cs-image" href="">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c15.webp" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c15.webp" | resize({ width: 640, height: 716 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c15.webp" | resize({ width: 826, height: 1048 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c15.webp" | resize({ width: 826, height: 1048 }) | jpeg %}" alt="Minecraft video game cover art with characters" width="413" height="524" loading="lazy" decoding="async">
+                        </picture>
+                        <div class="cs-info">
+                            <span class="cs-tag">Red Station</span>
+                            <span class="cs-project">Street Fighter 6</span>
+                        </div>
+                    </a>
+                    <a class="cs-image" href="">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c16.jpg" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c16.jpg" | resize({ width: 640, height: 716 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c16.jpg" | resize({ width: 826, height: 1048 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c16.jpg" | resize({ width: 826, height: 1048 }) | jpeg %}" alt="NBA 2K26 video game cover art" width="413" height="524" loading="lazy" decoding="async">
+                        </picture>
+                       <div class="cs-info">
+                            <span class="cs-tag">Red Station</span>
+                            <span class="cs-project">Street Fighter 6</span>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <a href="/project-one/" class="cs-button-solid">View a Project</a>
+            <a href="/games/" class="cs-button-solid">Browse the Full Game Library</a>
         </div>
+        
+        <picture class="cs-top-shape">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 1172 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 1172 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 572 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 572 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 526 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 526 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 526 }) | png %}" alt="" width="1920" height="404" loading="lazy" decoding="async">
+        </picture>
+
+        <picture class="cs-bottom-shape">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 640, height: 1172 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 640, height: 1172 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2048, height: 572 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2048, height: 572 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 526 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 526 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 526 }) | png %}" alt="" width="1920" height="404" loading="lazy" decoding="async">
+        </picture>
     </section>
 
     <!-- ============================================ -->
-    <!--                   Reviews                    -->
+    <!--                     Steps                    -->
     <!-- ============================================ -->
 
-    <section id="reviews-67">
+    <section id="steps-2128">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Our Reviews</span>
-                <h2 class="cs-title">
-                    Words From Our Customers
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
-                </p>
+                <span class="cs-topper">How It Works</span>
+                <h2 class="cs-title">Booking Your Event Is Super Easy</h2>
+                <p class="cs-text">Getting the AFK Mobile Arcade at your next event takes just three simple steps. We handle the rest so you can focus on having a great time</p>
             </div>
             <ul class="cs-card-group">
-                <!-- Review 1 -->
                 <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, debitis!
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
+                    <div class="cs-icons">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/why-1.svg" alt="icon" width="20" height="20" aria-hidden="true" />
                     </div>
+                    <h3 class="cs-h3">Fill Out the Form</h3>
+                    <span class="cs-item-text">
+                        Head to our booking page, share a few details about your event — date, location, and guest count — and we'll get back to you fast.
+                    </span>
                 </li>
-                <!-- Review 2 -->
                 <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
+                    <div class="cs-icons">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/why-2.svg" alt="icon" width="20" height="20" aria-hidden="true" />
                     </div>
+                    <h3 class="cs-h3">We Confirm & Lock It In</h3>
+                    <span class="cs-item-text">
+                        Once we review your details, we'll confirm availability, walk you through package options, and secure your spot with a simple payment process.
+                    </span>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-icons">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/why-3.svg" alt="icon" width="20" height="20" aria-hidden="true" />
+                    </div>
+                    <h3 class="cs-h3">We Show Up & Game On</h3>
+                    <span class="cs-item-text">
+                        On the day of your event, we arrive early, set everything up, and run the full gaming experience so your guests can dive right in.
+                    </span>
                 </li>
             </ul>
-            <a href="/reviews/" class="cs-button-solid">Read All Reviews</a>
+            <a href="/contact/" class="cs-button-solid">Book Your Event Today</a>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c17.jpg" | resize({ width: 640, height: 3026 }) | avif %}" type="image/avif">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c17.jpg" | resize({ width: 2048, height: 1620 }) | avif %}" type="image/avif">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c17.jpg" | resize({ width: 2500, height: 1245 }) | avif %}" type="image/avif">
+            <img src="{% getUrl "/assets/images/c17.jpg" | resize({ width: 2500, height: 1245 }) | jpeg %}" alt="Dimly lit retro arcade room with neon glow" width="1920" height="956" loading="lazy" decoding="async">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Why Choose Us                 -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-1840">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c18.jpg" | resize({ width: 424, height: 628 }) | avif %}" type="image/avif">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c18.jpg" | resize({ width: 588, height: 994 }) | avif %}" type="image/avif">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c18.jpg" | resize({ width: 920, height: 1136 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/c18.jpg" | resize({ width: 920, height: 1136 }) | jpeg %}" alt="Four smiling kids holding controllers in gaming trailer" width="460" height="568" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-frame-accent" aria-hidden="true"></div>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">Where We Roll</span>
+                <h2 class="cs-title">Serving Greensboro and Surrounding Communities</h2>
+                <p class="cs-text">
+                    From Greensboro to Winston-Salem, Raleigh to Charlotte, we travel across North Carolina to bring the ultimate mobile gaming experience right to your event.
+                </p>
+                <h3 class="cs-h3">Areas We Travel To</h3>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Archdale
+                    </li>
+                     <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Durham
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        High Point
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Asheboro
+                    </li>
+                      <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Eden
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Hillsborough
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Burlington
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Elkin
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Jamestown
+                    </li>
+                     <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Chapel Hill
+                    </li>
+                     <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Elon
+                    </li>
+                     <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Julian
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Charlotte
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Gibsonville
+                    </li>
+                     <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Kernersville
+                    </li>
+                     <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Clemmons
+                    </li>
+                     <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Greensboro
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        King
+                    </li>                    
+                </ul>
+                <a class="cs-button-solid" href="">Check If We Serve Your Area</a>
+            </div>
+        </div>
+        
+        <picture class="cs-top-shape">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 1172 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 1172 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 572 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 572 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 526 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 526 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 526 }) | png %}" alt="" width="1920" height="404" loading="lazy" decoding="async">
+        </picture>
+
+        <picture class="cs-bottom-shape">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 640, height: 1172 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 640, height: 1172 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2048, height: 572 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2048, height: 572 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 526 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 526 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 526 }) | png %}" alt="" width="1920" height="404" loading="lazy" decoding="async">
+        </picture>
+         <img class="cs-graphic" src="/assets/images/graphic-2.png" alt="arcade console" aria-hidden="true" width="326" height="190" />
+    </section>
+                  
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery-2243">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">See It Live</span>
+                    <h2 class="cs-title">Real Events, Real Smiles, Real Fun</h2>
+                    <p class="cs-text">
+                        Don't just take our word for it — see the excitement for yourself. Browse real photos from actual events we've powered across Greensboro and surrounding communities.
+                    </p>
+                </div>
+                <a class="cs-button-solid" href="/gallery/">View Full Gallery</a>
+            </div>
+            <div class="cs-gallery">
+                <picture class="cs-picture cs-picture1">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c19.jpg" | resize({ width: 280, height: 352 }) | avif %}" type="image/avif">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c19.jpg" | resize({ width: 298, height: 464 }) | avif %}" type="image/avif">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c19.jpg" | resize({ width: 704, height: 786 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/c19.jpg" | resize({ width: 704, height: 786 }) | jpeg %}" alt="Excited young boy with open mouth holding controller" width="352" height="393" loading="lazy" decoding="async">
+                </picture>
+
+                <picture class="cs-picture cs-picture2">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c20.jpg" | resize({ width: 280, height: 474 }) | avif %}" type="image/avif">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c20.jpg" | resize({ width: 298, height: 632 }) | avif %}" type="image/avif">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c20.jpg" | resize({ width: 704, height: 994 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/c20.jpg" | resize({ width: 704, height: 994 }) | jpeg %}" alt="Girl laughing with controller inside mobile gaming trailer" width="352" height="497" loading="lazy" decoding="async">
+                </picture>
+
+                <picture class="cs-picture cs-picture3">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c21.jpg" | resize({ width: 576, height: 598 }) | avif %}" type="image/avif">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c21.jpg" | resize({ width: 634, height: 840 }) | avif %}" type="image/avif">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c21.jpg" | resize({ width: 704, height: 1200 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/c21.jpg" | resize({ width: 704, height: 1200 }) | jpeg %}" alt="Group of kids gaming on large trailer screens" width="352" height="600" loading="lazy" decoding="async">
+                </picture>
+
+                <picture class="cs-picture cs-picture4">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c22.jpg" | resize({ width: 280, height: 474 }) | avif %}" type="image/avif">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c22.jpg" | resize({ width: 298, height: 632 }) | avif %}" type="image/avif">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c22.jpg" | resize({ width: 704, height: 994 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/c22.jpg" | resize({ width: 704, height: 994 }) | jpeg %}" alt="Teens pointing and reacting inside blue-lit gaming trailer" width="352" height="497" loading="lazy" decoding="async">
+                </picture>
+
+                <picture class="cs-picture cs-picture5">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c23.jpg" | resize({ width: 280, height: 352 }) | avif %}" type="image/avif">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c23.jpg" | resize({ width: 298, height: 464 }) | avif %}" type="image/avif">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c23.jpg" | resize({ width: 704, height: 786 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/c23.jpg" | resize({ width: 704, height: 786 }) | jpeg %}" alt="Two girls laughing together holding video game controllers" width="352" height="393" loading="lazy" decoding="async">
+                </picture>
+            </div>
         </div>
     </section>
 
-    {% include 'sections/cta.html' %}
+    <!-- ============================================ -->
+    <!--                  Reviews                     -->
+    <!-- ============================================ -->
+
+    <section id="reviews-2354">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">What They Say</span>
+                <h2 class="cs-title">Families Love AFK Arcade</h2>
+            </div>                  
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-featured">Extremely Cool Environment</span>
+                    <p class="cs-item-text">
+                        Lots of popular options to play. the owner was very cool as well. sanitizer at the door mandatory, which i love. overall a very great experience & i will be recommending to anyone who’s having a party! even adults.
+                    </p>
+                    <div class="cs-info">
+                        <picture class="cs-profile-wrapper">
+                            <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo icon" width="80" height="52">
+                        </picture>
+                        <span class="cs-name">
+                            ThatNovo Guy
+                            <span class="cs-desc">Gamer</span>
+                        </span>
+                    </div>
+                    <img class="cs-quote" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="quote" width="86" height="69">
+                </li>
+                <li class="cs-item">
+                    <span class="cs-featured">Professional and Patient</span>
+                    <p class="cs-item-text">
+                        AFK Mobile Arcade came to my school for a special incentive for our students here on time (HOT) party. Vince was very professional and patient. Reach out to him for all your gaming needs. He will travel to you. Highly recommended!
+                    <div class="cs-info">
+                        <picture class="cs-profile-wrapper">
+                           <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo icon" width="80" height="52">
+                        </picture>
+                        <span class="cs-name">
+                            Sidnell Harris
+                            <span class="cs-desc">Parent</span>
+                        </span>
+                    </div>
+                    <img class="cs-quote" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="quote" width="86" height="69">
+                </li>
+                 <li class="cs-item">
+                    <span class="cs-featured">Amazing Gaming Experience</span>
+                    <p class="cs-item-text">
+                        We had an amazing experience using the gaming truck for my son’s birthday party! The truck arrived ahead of time, was super clean, and packed with awesome games that kept all the kids entertained the entire party. The setup was perfect, and there was something for every age group.
+                    </p>
+
+                    <div class="cs-info">
+                        <picture class="cs-profile-wrapper">
+                            <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo icon" width="80" height="52">
+                        </picture>
+                        <span class="cs-name">
+                            Carla Johnson
+                            <span class="cs-desc">Parent</span>
+                        </span>
+                    </div>
+                    <img class="cs-quote" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="quote" width="86" height="69">
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c24.jpg" | resize({ width: 576, height: 576 }) | avif %}" type="image/avif">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c24.jpg" | resize({ width: 1686, height: 1844 }) | avif %}" type="image/avif">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c24.jpg" | resize({ width: 1910, height: 1576 }) | avif %}" type="image/avif">
+                        <img src="{% getUrl "/assets/images/c24.jpg" | resize({ width: 1910, height: 1576 }) | jpeg %}" alt="Illustrated figure with VR headset in neon cityscape" width="955" height="788" loading="lazy" decoding="async">
+                    </picture>
+                </li>
+            </ul>
+            <a class="cs-button-solid" href="{{client.socials.google}}">Read More Reviews on Google</a>
+        </div>
+    </section>
+                                
+    <!-- ============================================ -->
+    <!--                     FAQ                      -->
+    <!-- ============================================ -->
+
+    <section id="faq-2389">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <div class="cs-subscribe">
+                    <h3 class="cs-h3">Stay In The Loop</h3>
+                    <p class="cs-text">
+                        Get exclusive deals, event availability updates, and gaming news delivered straight to your inbox. No spam, ever — just good stuff.
+                    </p>
+                    <form class="cs-form" name="Subscribe Form" method="post" data-netlify="true" netlify-honeypot="bot-field">
+                         <input type="hidden" name="form-name" value="Subscribe Form" />
+
+                        <!-- Honeypot field (hidden from users) -->
+                        <p style="display:none;">
+                            <label>Don’t fill this out if you're human: 
+                            <input name="bot-field" />
+                            </label>
+                        </p>
+
+                        <input class="cs-input" type="email" id="cs-email-1506-2389" name="find-us" placeholder="Enter your email">
+                        <button class="cs-button-solid cs-submit" type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 542, height: 550 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 542, height: 550 }) | png %}" type="image/png">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 986, height: 1006 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 986, height: 1006 }) | png %}" type="image/png">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 1188, height: 1210 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 1188, height: 1210 }) | png %}" type="image/png">
+                    <img src="{% getUrl "/assets/images/c26.png" | resize({ width: 1188, height: 1210 }) | png %}" alt="arcade and game console background" width="594" height="605" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-frame-accent" aria-hidden="true"></div>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">FAQ</span>
+                <h2 class="cs-title">Frequently Asked Questions</h2>
+                <ul class="cs-faq-group">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item active">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How much space do you need to park the truck?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Our game truck requires at least 50 – 60 feet of fairly level ground in order for us to park safely. We try not to park in your driveway for safety and insurance reasons, however parking in front of our customer’s house normally works. If not we can always meet at the local park near your house to have the event.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                               How many players can game at one time?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Our game truck comfortably fits up to 23 players at a single time, making it perfect for parties big and small with zero waiting around.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What happens if the weather is bad on my event day?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            AFK Mobile Arcade is designed for all types of weather conditions. The theater is insulated and climate controlled with heat and air conditioning. There may be occasions when the weather does not want to cooperate with your scheduled party. In the event of severe weather (lightning, heavy snow or rain, very high winds, flooding etc,) we may (and reserve the right to) reschedule your service for safety. If the threat of these storms threatens your party and youare aware in advance (pending or anticipated ice/snow/rain/wind storm) please contact us to begin the rescheduling.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Are food and drinks allowed inside the truck?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Our mission is to deliver you the most personalized prestigious gaming experience possible. The quality of your experience depends on the cleanliness of our game truck so unfortunately, we don’t allow food or drink in our game truck. Sticky fingers and controllers don’t mix well. If this is an adult party we are willing to make an exception.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is your cancellation policy?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Full payment is required once we secure your date and time. A current credit/debit card is is required in order to secure your spot. Unfortunately there will be a $99 cancellation fee for all events cancelled by customers after payment has been received. Any event cancelled within 7 days of the event will receive no refund. If there is an emergency we will work together with you to reschedule.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c25.jpg" | resize({ width: 640, height: 2422 }) | avif %}" type="image/avif">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c25.jpg" | resize({ width: 2048, height: 1820 }) | avif %}" type="image/avif">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c25.jpg" | resize({ width: 2500, height: 1257 }) | avif %}" type="image/avif">
+            <img src="{% getUrl "/assets/images/c25.jpg" | resize({ width: 2500, height: 1257 }) | jpeg %}" alt="Illustrated retro arcade room with neon-lit cabinets" width="1920" height="965" loading="lazy" decoding="async">
+        </picture>
+    </section>
+    
+    {% include "sections/cta.html" %}
+                            
+    <script defer src="/assets/js/faq.js"></script>
+                                    
 {% endblock %}

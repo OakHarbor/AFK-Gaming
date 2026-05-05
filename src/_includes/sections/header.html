@@ -3,42 +3,82 @@
 <!-- ============================================ -->
 
 <header id="cs-navigation">
-    <div class="cs-container">
-        <!--Nav Logo-->
-        <a href="/" class="cs-logo" aria-label="Company Name Home page">
-            <img src="/assets/svgs/logo-black.svg" alt="" width="210" height="29" aria-hidden="true" decoding="async">
-        </a>
-        <!--Navigation List-->
-        <nav class="cs-nav" aria-label="main navigation">
-            <!--Mobile Nav Toggle-->
-            <button class="cs-toggle" id="cs-toggle" aria-expanded="false" aria-controls="cs-ul-wrapper" aria-label="mobile menu toggle" aria-haspopup="menu">
-                <span class="cs-box" aria-hidden="true">
-                    <span class="cs-line cs-line1" aria-hidden="true"></span>
-                    <span class="cs-line cs-line2" aria-hidden="true"></span>
-                    <span class="cs-line cs-line3" aria-hidden="true"></span>
-                </span>
-            </button>
-            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
-            <div class="cs-ul-wrapper" id="cs-ul-wrapper">
-                <ul id="cs-expanded" class="cs-ul">
+    <!--Nav Logo-->
+    <a href="/" class="cs-logo cs-desktop" aria-label="AFK Gaming Home page">
+        <div class="cs-logo-wrapper">
+            <!--Default Logo-->
+            <img class="cs-default" src="/assets/svgs/logo.svg" alt="" width="210" height="29" aria-hidden="true" decoding="async">
+        </div>
+    </a>
+    <div class="cs-middle">
+        <!--Top Bar-->
+        <div class="cs-top-bar">
+            <div class="cs-top-social">
+                <a href="{{client.socials.facebook}}" class="cs-social-link">
+                    <img class="cs-social-icon" src="/assets/svgs/facebook.svg" alt="" width="12" height="12" aria-hidden="true" decoding="async">
+                     <img class="cs-social-icon cs-social-alt" src="/assets/svgs/facebook-alt.svg" alt="" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="{{client.socials.instagram}}" class="cs-social-link">
+                    <img class="cs-social-icon" src="/assets/svgs/instagram.svg" alt="" width="12" height="12" aria-hidden="true" decoding="async">
+                    <img class="cs-social-icon cs-social-alt" src="/assets/svgs/instagram-alt.svg" alt="" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+            </div>
+            <ul class="cs-location">
+                <li class="cs-item cs-remove">
+                    <img class="cs-icon" src="/assets/svgs/nav-email.svg" alt="" width="20" height="20" aria-hidden="true" decoding="async">
+                    {{client.email}}
+                </li>
+                <li class="cs-item">
+                    <img class="cs-icon" src="/assets/svgs/nav-clock.svg" alt="" width="20" height="20" aria-hidden="true" decoding="async">
+                    M-S: 9:00am - 8:00pm
+                </li>
+            </ul>
+        </div>
+        <div class="cs-bottom-bar">
+            <a href="/" class="cs-logo cs-mobile" aria-label="AFK Gaming Home page">
+                <div class="cs-logo-wrapper">
+                    <!--Default Logo-->
+                    <img class="cs-default" src="/assets/svgs/logo.svg" alt="" width="210" height="29" aria-hidden="true" decoding="async">
+                </div>
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" aria-label="main navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle" aria-haspopup="menu" aria-expanded="false" aria-controls="cs-ul-wrapper">
+                    <span class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1"></span>
+                        <span class="cs-line cs-line2"></span>
+                        <span class="cs-line cs-line3"></span>
+                    </span>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper" id="cs-ul-wrapper">
+                    <ul class="cs-ul">
                     <li class="cs-li">
                         <a href="/" class="cs-li-link {% if page.url == "/" %} cs-active {% endif %}" {% if page.url == "/" %} aria-current="page" {% endif %}>
                             Home
                         </a>
                     </li>
-                    <li class="cs-li">
-                        <a href="/about/" class="cs-li-link {% if page.url == "/about/" %} cs-active {% endif %}" {% if page.url == "/about/" %} aria-current="page" {% endif %}>
-                            About
-                        </a>
-                    </li>
-                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
-                    <!-- Note: When copying this dropdown, update the id attribute with an appropriate name (e.g., "services-dropdown-toggle", "products-dropdown-toggle") and ensure the aria-labelledby attribute on the ul matches the button's id -->
                     <li class="cs-li cs-dropdown">
-                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/project-one/" or page.url == "/project-two/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="projects-dropdown-toggle">
-                            Projects
+                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/project-one/" or page.url == "/project-two/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="event-types-dropdown-toggle">
+                            Types Of Events
                             <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
                         </button>
-                        <ul class="cs-drop-ul" aria-labelledby="projects-dropdown-toggle">
+                        <ul class="cs-drop-ul" aria-labelledby="event-types-dropdown-toggle">
+                            <li class="cs-drop-li">
+                                <a href="/project-one/" class="cs-li-link cs-drop-link">Project One</a>
+                        </li>   
+                            <li class="cs-drop-li">
+                                <a href="/project-two/" class="cs-li-link cs-drop-link">Project Two</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li cs-dropdown">
+                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/project-one/" or page.url == "/project-two/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="game-dropdown-toggle">
+                            Game Gallery
+                            <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
+                        </button>
+                        <ul class="cs-drop-ul" aria-labelledby="game-dropdown-toggle">
                             <li class="cs-drop-li">
                                 <a href="/project-one/" class="cs-li-link cs-drop-link">Project One</a>
                             </li>
@@ -48,28 +88,52 @@
                         </ul>
                     </li>
                     <li class="cs-li">
+                        <a href="/about/" class="cs-li-link {% if page.url == "/about/" %} cs-active {% endif %}" {% if page.url == "/about/" %} aria-current="page" {% endif %}>
+                            About
+                        </a>
+                    </li>
+                     <li class="cs-li">
+                        <a href="/pricing/" class="cs-li-link {% if page.url == "/pricing/" %} cs-active {% endif %}" {% if page.url == "/pricing/" %} aria-current="page" {% endif %}>
+                            Pricing
+                        </a>
+                    </li>
+                     <li class="cs-li">
                         <a href="/reviews/" class="cs-li-link {% if page.url == "/reviews/" %} cs-active {% endif %}" {% if page.url == "/reviews/" %} aria-current="page" {% endif %}>
                             Reviews
                         </a>
                     </li>
-                    <li class="cs-li">
-                        <a href="/blog/" class="cs-li-link {% if page.url == "/blog/" %} cs-active {% endif %}" {% if page.url == "/blog/" %} aria-current="page" {% endif %}>
-                            Blog
-                        </a>
-                    </li>
-                    <li class="cs-li cs-hide-on-desktop">
+                     <li class="cs-li">
                         <a href="/contact/" class="cs-li-link {% if page.url == "/contact/" %} cs-active {% endif %}" {% if page.url == "/contact/" %} aria-current="page" {% endif %}>
                             Contact
                         </a>
                     </li>
-                </ul>
+                    </ul>
+                </div>
+            </nav>
+            <a class="cs-nav-button cs-tablet" href="tel:{{client.phoneForTel}}">
+                <picture class="cs-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/nav-call.svg" alt="" width="24" height="24" aria-hidden="true">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-header">Free Contact 24/7</span>
+                    <span class="cs-link-content">{{client.phoneFormatted}}</span>
+                </div>
+            </a>
+            <a href="/contact/" class="cs-button-border">
+                Book Your Event
+            </a>
+        </div>
+    </div>
+    <div class="cs-contact-wrapper">
+        <a class="cs-desktop-button" href="tel:{{client.phoneForTel}}">
+            <picture class="cs-wrapper">
+                <img class="cs-button-icon" loading="lazy" decoding="async" src="/assets/svgs/nav-call.svg" alt="call icon" width="24" height="24" aria-hidden="true">
+            </picture>
+            <div class="cs-info">
+                <span class="cs-header">Free Contact 24/7</span>
+                <span class="cs-link-content">{{client.phoneFormatted}}</span>
             </div>
-        </nav>
-        <a href="/contact/" class="cs-button-solid cs-nav-button">Contact Us</a>
-        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
-        <button id="dark-mode-toggle" aria-label="dark mode toggle" aria-pressed="false">
-            <img class="cs-moon" aria-hidden="true" src="/assets/svgs/moon.svg" decoding="async" alt="" width="15" height="15">
-            <img class="cs-sun" aria-hidden="true" src="/assets/svgs/sun.svg" decoding="async" alt="" width="15" height="15">
-        </button>
+        </a>
     </div>
 </header>
+                                
