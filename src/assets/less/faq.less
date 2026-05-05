@@ -1,0 +1,381 @@
+/*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #faq-2389 {
+        padding: var(--sectionPadding);
+        background-color: var(--primaryBg);
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at desktop */
+            max-width: (584/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* 40px - 48px */
+            gap: clamp(2.5rem, 5vw, 3rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            max-width: (630/16rem);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-title {
+            /* 20 characters wide including spaces */
+            max-width: 20ch;
+            margin: 0 auto (16/16rem) 0;
+        }
+
+        .cs-faq-group {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .cs-faq-item {
+            list-style: none;
+            width: 100%;
+            border-bottom: 1px solid #E8EBEF;
+            transition: border-bottom 0.3s;
+
+            &.active {
+
+                border-bottom: 1px solid var(--primary);
+                .cs-button {
+                    color: var(--secondary);
+                    .cs-indicator {
+                        &:before {
+                            transform: translate(-50%, -50%) rotate(360deg);
+                        }
+
+                        &:after {
+                            transform: translate(-50%, -50%) rotate(0deg);
+                            background-color: var(--secondary);
+                        }
+                    }
+                }
+                .cs-item-p {
+                    height: auto;
+                    /* 20px - 24px bottom */
+                    padding: 0 0 clamp(1rem, 2vw, 1.5rem) 0;
+                    opacity: 1;
+                }
+            }
+        }
+
+        .cs-button {
+            font-size: (20/16rem);
+            line-height: 1.2em;
+            text-align: left;
+            font-weight: bold;
+            /* 16px - 24px */
+            padding: clamp(1rem, 2.3vw, 1.5rem) 0;
+            border: none;
+            background: transparent;
+            color: var(--headerColor);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            transition:
+                background-color 0.3s,
+                color 0.3s;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .cs-indicator {
+                width: (24/16rem);
+                height: (24/16rem);
+                position: relative;
+                z-index: 1;
+
+                &:before {
+                    /* left line */
+                    content: '';
+                    width: (12/16rem);
+                    height: (2/16rem);
+                    background-color: white;
+                    opacity: 1;
+                    border-radius: 2px;
+                    position: absolute;
+                    display: block;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: transform .5s;
+                }
+
+                &:after {
+                    /* right line */
+                    content: '';
+                    width: (12/16rem);
+                    height: (2/16rem);
+                    background-color: white;
+                    opacity: 1;
+                    border-radius: 2px;
+                    position: absolute;
+                    display: block;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(90deg);
+                    transition: transform .5s;
+                }
+            }
+        }
+
+        .cs-button-text {
+            width: 90%;
+            display: block;
+        }
+
+        .cs-item-p {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.5em;
+            width: 90%;
+            max-width: (541/16rem);
+            height: 0;
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            color: var(--bodyTextColor);
+            /* clips the text so it doesn't show up */
+            overflow: hidden;
+            transition:
+                opacity 0.3s,
+                padding-bottom 0.3s;
+        }
+
+        .cs-image-group {
+            /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
+            font-size: ~"min(2.3vw, .916rem)";
+            /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
+            width: (597.5/16em);
+            height: (673.15/16em);
+            order: -1;
+            position: relative;
+            /* prevents flexbox from squishing it */
+            flex: none;
+            margin-top: (40/16em);
+
+            .cs-frame-accent {
+                &:after {
+                    content: url("/assets/svgs/frame-1.svg");
+                    width: auto;
+                    height: auto;
+                    position: absolute;
+                    left: 2px;
+                    top: calc(-2.375em + 2px);
+                    z-index: 1;
+                }
+
+                &:before {
+                    content: url("/assets/svgs/frame-2.svg");
+                    width: auto;
+                    height: auto;
+                    position: absolute;
+                    right: 2px;
+                    bottom: calc(2.375em - 2px);
+                    z-index: 1;
+                }
+            }
+
+            &::before {
+                width: calc(100% - 4px);
+                height: calc(100% - 4px);
+                top: -(36/16em);
+                left: 2px;
+                bottom: 0;
+                content: "";
+                position: absolute;
+                background: var(--primaryBg);
+                z-index: -1;
+                clip-path: polygon(0 0, 95% 0, 100% 5%, 100% 80%, 100% 100%, 5% 100%, 0 95%, 0% 20%);
+            }
+
+            &::after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                bottom: (38/16em);
+                position: absolute;
+                z-index: -2;
+                background: white;
+                clip-path: polygon(0 0, 95% 0, 100% 5%, 100% 80%, 100% 100%, 5% 100%, 0 95%, 0% 20%);
+            }
+        }
+
+        .cs-picture {
+            width: calc(37.34375em - 4px);
+            height: 37.34375em;
+            overflow: hidden;
+            display: block;
+            position: absolute;
+            bottom: calc(2.375em + 2px);
+            left: 50%;
+            transform: translateX(-50%);
+            clip-path: polygon(0 0, 95% 0, 100% 5%, 100% 80%, 100% 100%, 5% 100%, 0 95%, 0% 20%);
+            z-index: -1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .cs-subscribe {
+            /* 32px - 64px top & bottom */
+            /* 16px - 48px */
+            padding: clamp(1.75rem, 2.2vw, 2.5rem) clamp(3.5rem, 5.2vw, 4rem);
+            box-sizing: border-box;
+        }
+
+        .cs-form {
+            display: flex;
+            flex-direction: column;
+            gap: (8/16rem);
+            position: relative;
+            z-index: 1;
+        }
+
+        .cs-h3 {
+            /* 25px - 31px */
+            font-size: clamp(1.5625rem, 3vw, 1.9375rem);
+            line-height: 1.2em;
+            font-weight: 700;
+            margin: 0 0 (16/16rem);
+            color: var(--headerColor);
+            text-align: center;
+        }
+
+        .cs-text {
+            margin-bottom: (32/16rem);
+        }
+
+        .cs-input {
+            font-size: (16/16rem);
+            width: 100%;
+            /* 46px - 56px */
+            height: clamp(2.875rem, 9vw, 3.5rem);
+            margin: 0;
+            padding: 0;
+            padding-left: (20/16rem);
+            border: none;
+            background-color: #fff;
+            /* prevents padding from adding to width and height */
+            box-sizing: border-box;
+            display: block;
+            position: relative;
+            z-index: 1;
+            box-shadow: 4px 4px 0px 0px var(--primary);
+
+            &::placeholder {
+                color: var(--primaryShade-10);
+            }
+        }
+
+        .cs-submit {
+            line-height: (46/16rem);
+            width: 100%;
+            border: none;
+            box-shadow: none;
+
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .cs-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.08;
+            z-index: -1;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #faq-2389 {
+        .cs-input {
+            width: 100%;
+            padding-right: (170/16rem);
+        }
+
+        .cs-submit {
+            width: auto;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: (5/16rem);
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #faq-2389 {
+        .cs-container {
+            max-width: (1280/16rem);
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: (64/16rem);
+        }
+
+        .cs-content {
+            width: 50%;
+            padding: 0;
+        }
+
+        .cs-image-group {
+            font-size: min(1.3vw, 1rem);
+            height: auto;
+            min-height: (645/16em);
+        }
+
+        .cs-picture {
+            height: auto;
+            top: 0;
+        }
+    }
+}

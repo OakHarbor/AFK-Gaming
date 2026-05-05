@@ -1,0 +1,171 @@
+---
+description: "Meta description for the page"
+image: "OPTIONAL - If an image path is specified here, it will be used for that page's OG image. Useful for blog posts (implemented as standard with this kit)"
+eleventyComputed:
+  title: "{{ page.fileSlug | titleCase }} | {{ client.name }} | {{ client.address.city }}, {{ client.address.state }}"
+  permalink: "/{{ page.fileSlug | slugify }}/"
+---
+
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    
+    <link rel="stylesheet" href="/assets/css/{{ page.fileSlug }}.css">
+
+    <!-- Any page-specific tags that belong in the <head> -->
+
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Frequently Asked Questions</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/faq/" class="cs-link cs-active">FAQ</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" alt="AFK Mobile Arcade trailer parked in neon-lit cityscape" width="1920" height="550" loading="lazy" decoding="async">
+        </picture>
+    </div>
+
+      <!-- ============================================ -->
+    <!--                     FAQ                      -->
+    <!-- ============================================ -->
+
+    <section id="faq-2389">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <div class="cs-subscribe">
+                    <h3 class="cs-h3">Stay In The Loop</h3>
+                    <p class="cs-text">
+                        Get exclusive deals, event availability updates, and gaming news delivered straight to your inbox. No spam, ever — just good stuff.
+                    </p>
+                    <form class="cs-form" name="Subscribe Form" method="post" data-netlify="true" netlify-honeypot="bot-field">
+                         <input type="hidden" name="form-name" value="Subscribe Form" />
+
+                        <!-- Honeypot field (hidden from users) -->
+                        <p style="display:none;">
+                            <label>Don’t fill this out if you're human: 
+                            <input name="bot-field" />
+                            </label>
+                        </p>
+
+                        <input class="cs-input" type="email" id="cs-email-1506-2389" name="find-us" placeholder="Enter your email">
+                        <button class="cs-button-solid cs-submit" type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 542, height: 550 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 542, height: 550 }) | png %}" type="image/png">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 986, height: 1006 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 986, height: 1006 }) | png %}" type="image/png">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 1188, height: 1210 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 1188, height: 1210 }) | png %}" type="image/png">
+                    <img src="{% getUrl "/assets/images/c26.png" | resize({ width: 1188, height: 1210 }) | png %}" alt="arcade and game console background" width="594" height="605" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-frame-accent" aria-hidden="true"></div>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">FAQ</span>
+                <h2 class="cs-title">Frequently Asked Questions</h2>
+                <ul class="cs-faq-group">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item active">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How much space do you need to park the truck?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Our game truck requires at least 50 – 60 feet of fairly level ground in order for us to park safely. We try not to park in your driveway for safety and insurance reasons, however parking in front of our customer’s house normally works. If not we can always meet at the local park near your house to have the event.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                               How many players can game at one time?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Our game truck comfortably fits up to 23 players at a single time, making it perfect for parties big and small with zero waiting around.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What happens if the weather is bad on my event day?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            AFK Mobile Arcade is designed for all types of weather conditions. The theater is insulated and climate controlled with heat and air conditioning. There may be occasions when the weather does not want to cooperate with your scheduled party. In the event of severe weather (lightning, heavy snow or rain, very high winds, flooding etc,) we may (and reserve the right to) reschedule your service for safety. If the threat of these storms threatens your party and youare aware in advance (pending or anticipated ice/snow/rain/wind storm) please contact us to begin the rescheduling.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Are food and drinks allowed inside the truck?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Our mission is to deliver you the most personalized prestigious gaming experience possible. The quality of your experience depends on the cleanliness of our game truck so unfortunately, we don’t allow food or drink in our game truck. Sticky fingers and controllers don’t mix well. If this is an adult party we are willing to make an exception.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is your cancellation policy?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Full payment is required once we secure your date and time. A current credit/debit card is is required in order to secure your spot. Unfortunately there will be a $99 cancellation fee for all events cancelled by customers after payment has been received. Any event cancelled within 7 days of the event will receive no refund. If there is an emergency we will work together with you to reschedule.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c25.jpg" | resize({ width: 640, height: 2422 }) | avif %}" type="image/avif">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c25.jpg" | resize({ width: 2048, height: 1820 }) | avif %}" type="image/avif">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c25.jpg" | resize({ width: 2500, height: 1257 }) | avif %}" type="image/avif">
+            <img src="{% getUrl "/assets/images/c25.jpg" | resize({ width: 2500, height: 1257 }) | jpeg %}" alt="Illustrated retro arcade room with neon-lit cabinets" width="1920" height="965" loading="lazy" decoding="async">
+        </picture>
+    </section>
+
+    {% include 'sections/cta.html' %} 
+
+    <script defer src="/assets/js/faq.js"></script>
+
+{% endblock %}
+
+
+
+

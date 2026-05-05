@@ -46,6 +46,102 @@ eleventyComputed:
         </picture>
     </div>
 
+    <!-- ============================================ -->
+    <!--                  Pricing                     -->
+    <!-- ============================================ -->
+
+    <section id="pricing-975">
+        <picture class="cs-top-shape">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 1172 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 1172 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 572 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 572 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 526 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 526 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 526 }) | png %}" alt="" width="1920" height="404" loading="lazy" decoding="async">
+        </picture>
+
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Pricing</span>
+                <h2 class="cs-title">Our mobile Gaming Services Prices</h2>
+                <p class="cs-text">If you are a <strong>church, school, or nonprofit</strong> give us a call as these rates differ from our standard private party packages!</p>
+            </div>
+            <div class="cs-menu">
+                <!--Left Menu-->
+                <ul class="cs-menu-group">
+                    <li class="cs-menu-item">
+                        <h3 class="cs-h3">
+                            <span class="cs-header">Standard Package</span>
+                            <span class="cs-price">$399</span>
+                        </h3>
+                        <p class="cs-menu-text">
+                            Our standard package is a 2 hours.
+                        </p>
+                    </li>
+                    <li class="cs-menu-item">
+                        <h3 class="cs-h3">
+                            <span class="cs-header">Additional Hours</span>
+                            <span class="cs-price">$99</span>
+                        </h3>
+                        <p class="cs-menu-text">
+                            If you need additional hours then whats in the standard package. 
+                        </p>
+                    </li>
+                </ul>
+                <!--Right Menu-->
+                <ul class="cs-menu-group">
+                    <li class="cs-menu-item">
+                        <h3 class="cs-h3">
+                            <span class="cs-header">Virtual Reality Package</span>
+                            <span class="cs-price">$50</span>
+                        </h3>
+                        <p class="cs-menu-text">
+                            I have no idea what this is lol
+                        </p>
+                    </li>
+                    <li class="cs-menu-item">
+                        <h3 class="cs-h3">
+                            <span class="cs-header">Online Gaming</span>
+                            <span class="cs-price">$25</span>
+                        </h3>
+                        <p class="cs-menu-text">
+                             I have no idea what this is lol
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cs-policy">
+                <h3 class="cs-h3">
+                    <span class="cs-header">
+                        Mileage Fee
+                    </span>
+                </h3>
+                <p class="cs-menu-text">
+                    Mileage fee will be included if outside of our 25-mile travel radius. 
+                    If we can accommodate your same-day booking, a same-day booking fee will apply. 
+                    This fee will be discussed with you prior to confirming your event.
+                </p>
+            </div>
+
+            <div class="cs-policy">
+                <h3 class="cs-h3">
+                    <span class="cs-header">
+                        Cancellation Policy
+                    </span>
+                </h3>
+                <p class="cs-menu-text">
+                   To secure your date and time, full payment is required along with a valid credit card. Please note, that a $99 cancellation fee will apply to any cancellations made after payment has been processed. For cancellations within 7 days of the event, no refund will be issued. However, in the case of an emergency, we will work with you to reschedule your event.
+                </p>
+            </div>
+        </div>
+    </section>
+                                
+
 
        <!-- ============================================ -->
     <!--                Why Choose Us                 -->
@@ -142,19 +238,6 @@ eleventyComputed:
                 </ul>
             </div>
         </div>
-        
-        <picture class="cs-top-shape">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 1172 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 1172 }) | png %}" type="image/png">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 572 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 572 }) | png %}" type="image/png">
-            <!--Desktop Image-->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 526 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 526 }) | png %}" type="image/png">
-            <img src="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 526 }) | png %}" alt="" width="1920" height="404" loading="lazy" decoding="async">
-        </picture>
 
         <picture class="cs-bottom-shape">
             <!--Mobile Image-->

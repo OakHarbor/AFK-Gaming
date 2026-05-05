@@ -60,7 +60,16 @@ eleventyComputed:
                 </p>
               
                 <!--Form-->
-                <form class="cs-form" id="cs-form-323-2320" name="Contact Form" method="post">
+                <form class="cs-form" id="cs-form-323-2320" name="Contact Form" method="post" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="Contact Form" />
+
+                        <!-- Honeypot field (hidden from users) -->
+                    <p style="display:none;">
+                        <label>Don’t fill this out if you're human: 
+                        <input name="bot-field" />
+                        </label>
+                    </p>
+
                     <label class="cs-label">
                         Name
                         <input class="cs-input" required type="text" name="name" placeholder="Name">
@@ -72,15 +81,6 @@ eleventyComputed:
                     <label class="cs-label cs-phone">
                         Phone
                         <input class="cs-input" required type="tel" name="phone" placeholder="Phone">
-                    </label>
-                    <label class="cs-label cs-services">
-                        Services
-                        <select class="cs-input" name="Services">
-                            <option value="" disabled selected>Select a Service</option>
-                            <option value="New Construction">New Construction</option>
-                            <option value="Remodels">Remodels</option>
-                            <option value="Cabinets">Cabinets</option>
-                        </select>
                     </label>
                     <label class="cs-label">
                         Message
