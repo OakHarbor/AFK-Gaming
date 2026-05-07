@@ -26,7 +26,7 @@
             <ul class="cs-location">
                 <li class="cs-item cs-remove">
                     <img class="cs-icon" src="/assets/svgs/nav-email.svg" alt="" width="20" height="20" aria-hidden="true" decoding="async">
-                    {{client.email}}
+                    <a href="mailto:{{client.email}}" class="cs-link">Click To Email</a>
                 </li>
                 <li class="cs-item">
                     <img class="cs-icon" src="/assets/svgs/nav-clock.svg" alt="" width="20" height="20" aria-hidden="true" decoding="async">
@@ -60,7 +60,7 @@
                         </a>
                     </li>
                     <li class="cs-li cs-dropdown">
-                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/project-one/" or page.url == "/project-two/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="event-types-dropdown-toggle">
+                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/birthday-parties/" or page.url == "/school-events/" or page.url == "/corporate-events/" or page.url == "/church-events/" or page.url == "/non-profit-events/" or page.url == "/other-events/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="event-types-dropdown-toggle">
                             Types Of Events
                             <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
                         </button>
@@ -86,7 +86,7 @@
                         </ul>
                     </li>
                     <li class="cs-li cs-dropdown">
-                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/project-one/" or page.url == "/project-two/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="game-dropdown-toggle">
+                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/red-station/" or page.url == "/blue-station/" or page.url == "/green-station/" or page.url == "/yellow-station/" or page.url == "/orange-station/" or page.url == "/purple-station/" or page.url == "/pink-station/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="game-dropdown-toggle">
                             Game Gallery
                             <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
                         </button>
