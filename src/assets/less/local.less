@@ -1079,8 +1079,7 @@
         }
 
         .cs-image {
-            /* 320px - 524px */
-            min-height: clamp(20rem, 35vw, 32.75rem);
+            aspect-ratio: 1 / 1;
             /* clips the image corners */
             overflow: hidden;
             opacity: 1;
@@ -1751,7 +1750,7 @@
             height: auto;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: repeat(16, 16.666vw);
+            grid-template-rows: repeat(13, 16.666vw);
             gap: clamp(.5rem, 2vw, 1.25rem);
         }
 

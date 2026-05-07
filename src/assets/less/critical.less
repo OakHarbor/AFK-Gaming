@@ -104,7 +104,7 @@
         }
 
         .cs-title {
-            width: 55%;
+            width: 40%;
             max-width: (630/16rem);
             margin-bottom: 0;
             /* prevents flexbox from squishing it */
@@ -117,11 +117,20 @@
     }
 }
 
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #hero-1950 {
+        .cs-title {
+            width: 55%;
+        }
+    }
+}
+
 /* Large Desktop Parallax Effect - 100px */
 @media only screen and (min-width: 100rem) {
     #hero-1950 {
         .cs-background {
-            background: url("/assets/images/hero.jpg");
+            background: url("/assets/images/hero.png");
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;

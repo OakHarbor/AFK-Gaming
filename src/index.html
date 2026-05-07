@@ -2,7 +2,7 @@
 title: "The Ultimate Mobile Gaming Experience in Greensboro, NC | AFK Mobile Arcade"
 description: " Mobile Arcade brings the ultimate gaming experience to you — packed with the latest consoles, VR, and massive screens. Perfect for birthday parties, school events, and more. Book today!"
 permalink: "/"
-tags: "sitemap" # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
+tags: "sitemap" 
 ---
 
 {% extends "layouts/base.html" %}
@@ -10,7 +10,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 {% block head %}
     <!-- Critical styles are loaded first -->
     <link rel="stylesheet" href="/assets/css/critical.css"/>
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/hero.png" | resize({ width: 640, height: 1400 }) | avif %}" />
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/hero.png" | resize({ width: 640, height: 1000 }) | avif %}" />
 
     <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
     {% if client.isProduction %}
@@ -46,8 +46,8 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         
         <picture class="cs-background">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 640, height: 1400 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 640, height: 1400 }) | png %}" type="image/png">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 640, height: 1000 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 640, height: 1000 }) | png %}" type="image/png">
             <!--Tablet Image-->
             <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 2048, height: 1600 }) | avif %}" type="image/avif">
             <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 2048, height: 1600 }) | png %}" type="image/png">
@@ -336,7 +336,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <img src="{% getUrl "/assets/images/c8.jpg" | resize({ width: 1120, height: 1344 }) | jpeg %}" alt="Gaming trailer interior with multiple lit video game screens" width="560" height="672" loading="lazy" decoding="async">
                 </picture>
                 <div class="cs-box">
-                    <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/s5.svg" alt="icon" width="60" height="60">
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/s5.svg" alt="gaming party icon" width="60" height="60">
                     <span class="cs-box-number">We Run the Party for You</span>
                     <span class="cs-box-desc">
                         Sit back and relax while our dedicated team handles everything on-site, keeping the games rolling and the energy high from start to finish.
@@ -398,12 +398,12 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <a class="cs-image" href="/red-station/">
                         <picture class="cs-picture">
                             <!--Mobile Image-->
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c11.jpg" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c11.jpg" | resize({ width: 576, height: 576 }) | avif %}" type="image/avif">
                             <!--Tablet Image-->
-                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c11.jpg" | resize({ width: 640, height: 716 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c11.jpg" | resize({ width: 640, height: 640 }) | avif %}" type="image/avif">
                             <!--Desktop Image-->
-                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c11.jpg" | resize({ width: 826, height: 1048 }) | avif %}" type="image/avif">
-                            <img src="{% getUrl "/assets/images/c11.jpg" | resize({ width: 826, height: 1048 }) | jpeg %}" alt="Fortnite video game promotional poster with four characters" width="413" height="524" loading="lazy" decoding="async">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c11.jpg" | resize({ width: 826, height: 826 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c11.jpg" | resize({ width: 826, height: 826 }) | jpeg %}" alt="Fortnite video game promotional poster with four characters" width="413" height="413" loading="lazy" decoding="async">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Red Station</span>
@@ -413,12 +413,12 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <a class="cs-image" href="/blue-station/">
                         <picture class="cs-picture">
                             <!--Mobile Image-->
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c12.jpg" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c12.jpg" | resize({ width: 576, height: 576 }) | avif %}" type="image/avif">
                             <!--Tablet Image-->
-                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c12.jpg" | resize({ width: 640, height: 716 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c12.jpg" | resize({ width: 640, height: 640 }) | avif %}" type="image/avif">
                             <!--Desktop Image-->
-                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c12.jpg" | resize({ width: 826, height: 1048 }) | avif %}" type="image/avif">
-                            <img src="{% getUrl "/assets/images/c12.jpg" | resize({ width: 826, height: 1048 }) | jpeg %}" alt="Roblox logo surrounded by various game thumbnails" width="413" height="524" loading="lazy" decoding="async">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c12.jpg" | resize({ width: 826, height: 826 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c12.jpg" | resize({ width: 826, height: 826 }) | jpeg %}" alt="Roblox logo surrounded by various game thumbnails" width="413" height="413" loading="lazy" decoding="async">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Blue Station</span>
@@ -428,12 +428,12 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <a class="cs-image" href="/yellow-station/">
                         <picture class="cs-picture">
                             <!--Mobile Image-->
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c13.jpg" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c13.jpg" | resize({ width: 576, height: 576 }) | avif %}" type="image/avif">
                             <!--Tablet Image-->
-                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c13.jpg" | resize({ width: 640, height: 716 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c13.jpg" | resize({ width: 640, height: 640 }) | avif %}" type="image/avif">
                             <!--Desktop Image-->
-                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c13.jpg" | resize({ width: 826, height: 1048 }) | avif %}" type="image/avif">
-                            <img src="{% getUrl "/assets/images/c13.jpg" | resize({ width: 826, height: 1048 }) | jpeg %}" alt="Madden NFL 26 video game cover art" width="413" height="524" loading="lazy" decoding="async">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c13.jpg" | resize({ width: 826, height: 826 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c13.jpg" | resize({ width: 826, height: 826 }) | jpeg %}" alt="Madden NFL 26 video game cover art" width="413" height="413" loading="lazy" decoding="async">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Yellow Station</span>
@@ -443,12 +443,12 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <a class="cs-image" href="/green-station/">
                         <picture class="cs-picture">
                             <!--Mobile Image-->
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c14.webp" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c14.webp" | resize({ width: 576, height: 576 }) | avif %}" type="image/avif">
                             <!--Tablet Image-->
-                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c14.webp" | resize({ width: 640, height: 716 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c14.webp" | resize({ width: 640, height: 640 }) | avif %}" type="image/avif">
                             <!--Desktop Image-->
-                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c14.webp" | resize({ width: 826, height: 1048 }) | avif %}" type="image/avif">
-                            <img src="{% getUrl "/assets/images/c14.webp" | resize({ width: 826, height: 1048 }) | jpeg %}" alt="Mario riding kart surrounded by racers in dust" width="413" height="524" loading="lazy" decoding="async">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c14.webp" | resize({ width: 826, height: 826 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c14.webp" | resize({ width: 826, height: 826 }) | jpeg %}" alt="Mario riding kart surrounded by racers in dust" width="413" height="413" loading="lazy" decoding="async">
                         </picture>
                        <div class="cs-info">
                             <span class="cs-tag">Green Station</span>
@@ -458,12 +458,12 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <a class="cs-image" href="/orange-station/">
                         <picture class="cs-picture">
                             <!--Mobile Image-->
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c15.webp" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c15.webp" | resize({ width: 576, height: 576 }) | avif %}" type="image/avif">
                             <!--Tablet Image-->
-                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c15.webp" | resize({ width: 640, height: 716 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c15.webp" | resize({ width: 640, height: 640 }) | avif %}" type="image/avif">
                             <!--Desktop Image-->
-                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c15.webp" | resize({ width: 826, height: 1048 }) | avif %}" type="image/avif">
-                            <img src="{% getUrl "/assets/images/c15.webp" | resize({ width: 826, height: 1048 }) | jpeg %}" alt="Minecraft video game cover art with characters" width="413" height="524" loading="lazy" decoding="async">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c15.webp" | resize({ width: 826, height: 826 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c15.webp" | resize({ width: 826, height: 826 }) | jpeg %}" alt="Minecraft video game cover art with characters" width="413" height="413" loading="lazy" decoding="async">
                         </picture>
                         <div class="cs-info">
                             <span class="cs-tag">Orange Station</span>
@@ -473,12 +473,12 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <a class="cs-image" href="/purple-station/">
                         <picture class="cs-picture">
                             <!--Mobile Image-->
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c16.jpg" | resize({ width: 576, height: 640 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c16.jpg" | resize({ width: 576, height: 576 }) | avif %}" type="image/avif">
                             <!--Tablet Image-->
-                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c16.jpg" | resize({ width: 640, height: 716 }) | avif %}" type="image/avif">
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c16.jpg" | resize({ width: 640, height: 640 }) | avif %}" type="image/avif">
                             <!--Desktop Image-->
-                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c16.jpg" | resize({ width: 826, height: 1048 }) | avif %}" type="image/avif">
-                            <img src="{% getUrl "/assets/images/c16.jpg" | resize({ width: 826, height: 1048 }) | jpeg %}" alt="NBA 2K26 video game cover art" width="413" height="524" loading="lazy" decoding="async">
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c16.jpg" | resize({ width: 826, height: 826 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c16.jpg" | resize({ width: 826, height: 826 }) | jpeg %}" alt="NBA 2K26 video game cover art" width="413" height="413" loading="lazy" decoding="async">
                         </picture>
                        <div class="cs-info">
                             <span class="cs-tag">Purple Station</span>
@@ -789,7 +789,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     </p>
                     <div class="cs-info">
                         <picture class="cs-profile-wrapper">
-                            <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo icon" width="80" height="52">
+                            <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="AFK Mobile Arcade logo" width="80" height="52">
                         </picture>
                         <span class="cs-name">
                             ThatNovo Guy
@@ -804,7 +804,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                         AFK Mobile Arcade came to my school for a special incentive for our students here on time (HOT) party. Vince was very professional and patient. Reach out to him for all your gaming needs. He will travel to you. Highly recommended!
                     <div class="cs-info">
                         <picture class="cs-profile-wrapper">
-                           <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo icon" width="80" height="52">
+                           <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="AFK Mobile Arcade logo" width="80" height="52">
                         </picture>
                         <span class="cs-name">
                             Sidnell Harris
@@ -821,7 +821,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 
                     <div class="cs-info">
                         <picture class="cs-profile-wrapper">
-                            <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="logo icon" width="80" height="52">
+                            <img class="cs-profile" loading="lazy" decoding="async" src="/assets/svgs/logo.svg" alt="AFK Mobile Arcade logo" width="80" height="52">
                         </picture>
                         <span class="cs-name">
                             Carla Johnson
@@ -882,7 +882,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <!--Desktop Image-->
                     <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 1188, height: 1210 }) | avif %}" type="image/avif">
                     <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 1188, height: 1210 }) | png %}" type="image/png">
-                    <img src="{% getUrl "/assets/images/c26.png" | resize({ width: 1188, height: 1210 }) | png %}" alt="arcade and game console background" width="594" height="605" loading="lazy" decoding="async">
+                    <img src="{% getUrl "/assets/images/c26.png" | resize({ width: 1188, height: 1210 }) | png %}" alt="Arcade console and gaming controller illustration" width="594" height="605" loading="lazy" decoding="async">
                 </picture>
                 <div class="cs-frame-accent" aria-hidden="true"></div>
             </div>
