@@ -1,0 +1,376 @@
+---
+description: "AFK Mobile Arcade is the perfect addition to graduations, weddings, community festivals, fundraisers, and any event in between. We bring the fun to you in Greensboro, NC and surrounding areas."
+eleventyComputed:
+  title: "{{ page.fileSlug | titleCase }} | {{ client.name }} | {{ client.address.city }}, {{ client.address.state }}"
+  permalink: "/{{ page.fileSlug | slugify }}/"
+---
+
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+
+    <link rel="stylesheet" href="/assets/css/events.css">
+
+    <!-- Any page-specific tags that belong in the <head> -->
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Other Events</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/other-events/" class="cs-link cs-active">Other Events</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" alt="AFK Mobile Arcade trailer parked in neon-lit cityscape" width="1920" height="550" loading="lazy" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                Side By Side                  -->
+    <!-- ============================================ -->
+
+    <section id="sbs-2233">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Event Hosting</span>
+                <h1 class="cs-title">Whatever the Occasion, We Bring the Fun</h1>
+                <p class="cs-text">If you're hosting an event, one of your goals is to make it something guests actually remember. Whether you're planning a graduation celebration, festival, community gathering, wedding, or anything else entirely, adding a mobile gaming trailer brings non-stop excitement that people of all ages will be talking about long after the event ends.</p>
+                <p class="cs-text">When you book AFK Mobile Arcade, there's no complex setup or teardown and no technical issues for you to deal with. Our self-sufficient trailer runs entirely on its own — just tell us when to be there and where to park, and our on-site staff handles everything. You get to relax and enjoy the event right alongside your guests.</p>
+                <a href="/contact/" class="cs-button-solid">Book Your Event</a>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c19.jpg" | resize({ width: 516, height: 628 }) | avif %}" type="image/avif">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c19.jpg" | resize({ width: 716, height: 1020 }) | avif %}" type="image/avif">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c19.jpg" | resize({ width: 1120, height: 1136 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/c19.jpg" | resize({ width: 1120, height: 1136 }) | jpeg %}" alt="AFK Mobile Arcade gaming trailer at an outdoor event" width="560" height="568" loading="lazy" decoding="async">
+                </picture>
+                <p class="cs-caption">Fun for <br/> Any Occasion</p>
+                <div class="cs-frame-accent" aria-hidden="true"></div>
+            </div>
+            <img class="cs-graphic" src="/assets/images/graphic-1.png" alt="arcade console" aria-hidden="true" width="411" height="244" />
+        </div>
+        <ul class="cs-stats">
+            <div class="cs-stat">
+                <p class="cs-stat-number">500+</p>
+                <p class="cs-stat-text">Events Successfully Hosted</p>
+            </div>
+            <div class="cs-stat">
+                <p class="cs-stat-number">50+</p>
+                <p class="cs-stat-text">Games in Our Library</p>
+            </div>
+            <div class="cs-stat">
+                <p class="cs-stat-number">5.0</p>
+                <p class="cs-stat-text">Average Google Review Rating</p>
+            </div>
+            <div class="cs-stat">
+                <p class="cs-stat-number">24</p>
+                <p class="cs-stat-text">Players at One Time</p>
+            </div>
+        </ul>
+        <picture class="cs-top-shape">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 664 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 664 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 464 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 464 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 398 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 398 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 398 }) | png %}" alt="" width="1920" height="306" loading="lazy" decoding="async">
+        </picture>
+        <picture class="cs-bottom-shape">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 640, height: 664 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 640, height: 664 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2048, height: 464 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2048, height: 464 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 398 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 398 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 398 }) | png %}" alt="" width="1920" height="306" loading="lazy" decoding="async">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--             Side By Side Reverse             -->
+    <!-- ============================================ -->
+
+    <section id="RPsbsr-2050">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Why Choose AFK</span>
+                <h2 class="cs-title">We've Hosted Everything — and We're Ready for Yours</h2>
+                <ul class="cs-ul-icons">
+                    <li class="cs-li-icons">
+                        <img class="cs-icon" aria-hidden="true" src="/assets/svgs/s1.svg" decoding="async" alt="icon" width="48" height="48" loading="lazy">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Community Events & Festivals</h3>
+                            <p class="cs-li-text">
+                                Gaming's universal appeal draws a diverse crowd and keeps energy high. Our trailer transforms community events into more interactive, memorable experiences.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-li-icons">
+                        <img class="cs-icon" aria-hidden="true" src="/assets/svgs/s2.svg" decoding="async" alt="icon" width="48" height="48" loading="lazy">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Weddings & Celebrations</h3>
+                            <p class="cs-li-text">
+                                Add a unique entertainment experience to your wedding, graduation, or milestone celebration that guests of every age enjoy during cocktail hours and reception downtime.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-li-icons">
+                        <img class="cs-icon" aria-hidden="true" src="/assets/svgs/s3.svg" decoding="async" alt="icon" width="48" height="48" loading="lazy">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Fundraisers & Outreach</h3>
+                            <p class="cs-li-text">
+                                Gaming challenges and tournaments give attendees an extra reason to show up and stay engaged, helping boost participation and excitement for your cause.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-li-icons">
+                        <img class="cs-icon" aria-hidden="true" src="/assets/svgs/s4.svg" decoding="async" alt="icon" width="48" height="48" loading="lazy">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Fully Flexible Setup</h3>
+                            <p class="cs-li-text">
+                                Climate-controlled, self-contained, and ready to go anywhere. We set up at a parking lot, park, or venue of your choice — no outside assistance required.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c21.jpg" | resize({ width: 516, height: 628 }) | avif %}" type="image/avif">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c21.jpg" | resize({ width: 716, height: 1526 }) | avif %}" type="image/avif">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c21.jpg" | resize({ width: 1120, height: 1344 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/c21.jpg" | resize({ width: 1120, height: 1344 }) | jpeg %}" alt="Mobile arcade trailer at an outdoor community event" width="560" height="672" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-box">
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/s5.svg" alt="gaming party icon" width="60" height="60">
+                    <span class="cs-box-number">Year-Round Availability</span>
+                    <span class="cs-box-desc">
+                        Our climate-controlled trailer is available all year long — rain or shine, hot or cold. Book for any season and any weather.
+                    </span>
+                </div>
+                <div class="cs-frame-accent" aria-hidden="true"></div>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c9.jpg" | resize({ width: 640, height: 3278 }) | avif %}" type="image/avif">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c9.jpg" | resize({ width: 2048, height: 2000 }) | avif %}" type="image/avif">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c9.jpg" | resize({ width: 2500, height: 1396 }) | avif %}" type="image/avif">
+            <img src="{% getUrl "/assets/images/c9.jpg" | resize({ width: 2500, height: 1396 }) | jpeg %}" alt="Retro neon grid corridor with glowing purple buildings" width="1920" height="1072" loading="lazy" decoding="async">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    Steps                     -->
+    <!-- ============================================ -->
+
+    <section id="steps-2128">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">How It Works</span>
+                <h2 class="cs-title">Three Easy Steps to Bring the Fun to Your Event</h2>
+                <p class="cs-text">Booking AFK Mobile Arcade for your event is simple. Here's what to expect from first contact to game-on.</p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <div class="cs-icons">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/why-1.svg" alt="icon" width="20" height="20" aria-hidden="true" />
+                    </div>
+                    <h3 class="cs-h3">Tell Us About Your Event</h3>
+                    <span class="cs-item-text">
+                        Share the details: date, location, approximate guest count, and what kind of experience you're looking for. We'll plan the perfect game lineup from there.
+                    </span>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-icons">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/why-2.svg" alt="icon" width="20" height="20" aria-hidden="true" />
+                    </div>
+                    <h3 class="cs-h3">We Show Up Ready</h3>
+                    <span class="cs-item-text">
+                        Our team arrives early, sets up the trailer, and gets every game station ready to go — no hookups, no hassle, completely self-contained and on schedule.
+                    </span>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-icons">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/why-3.svg" alt="icon" width="20" height="20" aria-hidden="true" />
+                    </div>
+                    <h3 class="cs-h3">Your Guests Have a Blast</h3>
+                    <span class="cs-item-text">
+                        From competitive tournaments to casual play, the gaming experience keeps guests entertained and engaged from start to finish — creating memories that last.
+                    </span>
+                </li>
+            </ul>
+            <a href="/contact/" class="cs-button-solid">Book Your Event</a>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c17.jpg" | resize({ width: 640, height: 3026 }) | avif %}" type="image/avif">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c17.jpg" | resize({ width: 2048, height: 1620 }) | avif %}" type="image/avif">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c17.jpg" | resize({ width: 2500, height: 1245 }) | avif %}" type="image/avif">
+            <img src="{% getUrl "/assets/images/c17.jpg" | resize({ width: 2500, height: 1245 }) | jpeg %}" alt="Dimly lit retro arcade room with neon glow" width="1920" height="956" loading="lazy" decoding="async">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                     FAQ                      -->
+    <!-- ============================================ -->
+
+    <section id="faq-2389">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <div class="cs-subscribe">
+                    <h3 class="cs-h3">Stay In The Loop</h3>
+                    <p class="cs-text">
+                        Get exclusive deals, event availability updates, and gaming news delivered straight to your inbox. No spam, ever, just good stuff.
+                    </p>
+                    <form class="cs-form" name="Subscribe Form" method="post" data-netlify="true" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="Subscribe Form" />
+                        <p style="display:none;">
+                            <label>Don't fill this out if you're human:
+                            <input name="bot-field" />
+                            </label>
+                        </p>
+                        <input class="cs-input" type="email" id="cs-email-other-faq" name="find-us" placeholder="Enter your email">
+                        <button class="cs-button-solid cs-submit" type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 542, height: 550 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 542, height: 550 }) | png %}" type="image/png">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 986, height: 1006 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 986, height: 1006 }) | png %}" type="image/png">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 1188, height: 1210 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c26.png" | resize({ width: 1188, height: 1210 }) | png %}" type="image/png">
+                    <img src="{% getUrl "/assets/images/c26.png" | resize({ width: 1188, height: 1210 }) | png %}" alt="Arcade console and gaming controller illustration" width="594" height="605" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-frame-accent" aria-hidden="true"></div>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">FAQ</span>
+                <h2 class="cs-title">Frequently Asked Questions</h2>
+                <ul class="cs-faq-group">
+                    <li class="cs-faq-item active">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What types of events have you been to?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            We have been invited to many different events, from community gatherings to fundraisers to church functions, corporate events, and birthday parties. Wherever there are people who enjoy playing video games is a good place for us to be.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How many players can the gaming trailer hold?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Our game truck can comfortably host up to 23 players at one time, with plenty of room for everyone to enjoy the experience without feeling cramped.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Is the game trailer available year-round?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Yes! Our mobile arcade is climate-controlled with both heating and air conditioning, so it can be booked and enjoyed throughout the entire year regardless of the weather.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What do I need to provide for setup?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            We need at least 50–60 feet of level ground to park the trailer safely. For safety and insurance reasons, we typically don't park in driveways. Parking in front of your home or at a nearby park is usually the best option.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How quickly can you set up?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Our mobile arcade is fully self-contained and can be set up in just minutes without any outside assistance. We arrive early so everything is ready to go when your guests arrive.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is your cancellation policy?
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Any event cancelled within 7 days of the event date is non-refundable. In cases of emergency, we are more than happy to work with you to reschedule at a time that works for everyone.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c25.jpg" | resize({ width: 640, height: 1344 }) | avif %}" type="image/avif">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c25.jpg" | resize({ width: 2048, height: 1344 }) | avif %}" type="image/avif">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c25.jpg" | resize({ width: 2500, height: 1257 }) | avif %}" type="image/avif">
+            <img src="{% getUrl "/assets/images/c25.jpg" | resize({ width: 2500, height: 1257 }) | jpeg %}" alt="Illustrated retro arcade room with neon-lit cabinets" width="1920" height="965" loading="lazy" decoding="async">
+        </picture>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+    <script defer src="/assets/js/faq.js"></script>
+
+{% endblock %}

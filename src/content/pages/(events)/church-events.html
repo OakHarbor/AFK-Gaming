@@ -1,0 +1,200 @@
+---
+description: "Bring wholesome, family-friendly gaming fun to your next church event. AFK Mobile Arcade serves congregations of all ages in Greensboro, NC with a self-contained mobile gaming trailer."
+eleventyComputed:
+  title: "{{ page.fileSlug | titleCase }} | {{ client.name }} | {{ client.address.city }}, {{ client.address.state }}"
+  permalink: "/{{ page.fileSlug | slugify }}/"
+---
+
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+
+    <link rel="stylesheet" href="/assets/css/events.css">
+
+    <!-- Any page-specific tags that belong in the <head> -->
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Church Events</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/church-events/" class="cs-link cs-active">Church Events</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" alt="AFK Mobile Arcade trailer parked in neon-lit cityscape" width="1920" height="550" loading="lazy" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                Side By Side                  -->
+    <!-- ============================================ -->
+
+    <section id="sbs-2233">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Church Gaming Events</span>
+                <h1 class="cs-title">Wholesome, Family-Friendly Fun for Your Entire Congregation</h1>
+                <p class="cs-text">Finding unique and family-friendly ideas for church events that people of all ages will enjoy — while encouraging real fellowship — can be a genuine challenge. At AFK Mobile Arcade, our mobile gaming trailer lets you take any church picnic, family game night, or community outreach event to the next level with fun that everyone can get behind.</p>
+                <p class="cs-text">We focus on bringing enjoyable video games that provide good, clean fun for every attendee. If you have specific consoles or games in mind for your congregation, just let us know when you're booking and we'll make sure everything is ready for an amazing time. We love taking a personalized approach to every event, ensuring the right experience for the right audience.</p>
+                <a href="/contact/" class="cs-button-solid">Book for Your Church</a>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c18.jpg" | resize({ width: 516, height: 628 }) | avif %}" type="image/avif">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c18.jpg" | resize({ width: 716, height: 1020 }) | avif %}" type="image/avif">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c18.jpg" | resize({ width: 1120, height: 1136 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/c18.jpg" | resize({ width: 1120, height: 1136 }) | jpeg %}" alt="Four smiling kids holding controllers in gaming trailer" width="560" height="568" loading="lazy" decoding="async">
+                </picture>
+                <p class="cs-caption">Gaming for <br/> Your Community</p>
+                <div class="cs-frame-accent" aria-hidden="true"></div>
+            </div>
+            <img class="cs-graphic" src="/assets/images/graphic-1.png" alt="arcade console" aria-hidden="true" width="411" height="244" />
+        </div>
+        <ul class="cs-stats">
+            <div class="cs-stat">
+                <p class="cs-stat-number">500+</p>
+                <p class="cs-stat-text">Events Successfully Hosted</p>
+            </div>
+            <div class="cs-stat">
+                <p class="cs-stat-number">50+</p>
+                <p class="cs-stat-text">Games in Our Library</p>
+            </div>
+            <div class="cs-stat">
+                <p class="cs-stat-number">5.0</p>
+                <p class="cs-stat-text">Average Google Review Rating</p>
+            </div>
+            <div class="cs-stat">
+                <p class="cs-stat-number">24</p>
+                <p class="cs-stat-text">Players at One Time</p>
+            </div>
+        </ul>
+        <picture class="cs-top-shape">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 664 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 664 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 464 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 464 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 398 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 398 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 398 }) | png %}" alt="" width="1920" height="306" loading="lazy" decoding="async">
+        </picture>
+        <picture class="cs-bottom-shape">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 640, height: 664 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 640, height: 664 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2048, height: 464 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2048, height: 464 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 398 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 398 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 398 }) | png %}" alt="" width="1920" height="306" loading="lazy" decoding="async">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--             Side By Side Reverse             -->
+    <!-- ============================================ -->
+
+    <section id="RPsbsr-2050">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Why Choose AFK</span>
+                <h2 class="cs-title">Built for Fellowship, Fun, and Every Generation</h2>
+                <ul class="cs-ul-icons">
+                    <li class="cs-li-icons">
+                        <img class="cs-icon" aria-hidden="true" src="/assets/svgs/s1.svg" decoding="async" alt="icon" width="48" height="48" loading="lazy">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Fun for All Ages</h3>
+                            <p class="cs-li-text">
+                                From young children to seniors, our game selection is tailored to be welcoming and enjoyable for every member of your congregation, not just the kids.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-li-icons">
+                        <img class="cs-icon" aria-hidden="true" src="/assets/svgs/s2.svg" decoding="async" alt="icon" width="48" height="48" loading="lazy">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Wholesome, Clean Entertainment</h3>
+                            <p class="cs-li-text">
+                                We prioritize family-friendly games and can customize the selection to ensure everything aligns with your church's values and community standards.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-li-icons">
+                        <img class="cs-icon" aria-hidden="true" src="/assets/svgs/s3.svg" decoding="async" alt="icon" width="48" height="48" loading="lazy">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Engages Your Youth Group</h3>
+                            <p class="cs-li-text">
+                                Teens and young adults love gaming together. Our trailer gives youth groups a genuine reason to connect, compete, and keep coming back to church events.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-li-icons">
+                        <img class="cs-icon" aria-hidden="true" src="/assets/svgs/s4.svg" decoding="async" alt="icon" width="48" height="48" loading="lazy">
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Fully Self-Contained</h3>
+                            <p class="cs-li-text">
+                                No power hookups, no outside assistance required. We can park in the church lot or nearby and be ready to go in minutes, completely on our own.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c1.jpg" | resize({ width: 516, height: 628 }) | avif %}" type="image/avif">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c1.jpg" | resize({ width: 716, height: 1526 }) | avif %}" type="image/avif">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c1.jpg" | resize({ width: 1120, height: 1344 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/c1.jpg" | resize({ width: 1120, height: 1344 }) | jpeg %}" alt="Kids playing video games inside mobile gaming trailer" width="560" height="672" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-box">
+                    <img class="cs-box-icon" loading="lazy" decoding="async" src="/assets/svgs/s5.svg" alt="gaming party icon" width="60" height="60">
+                    <span class="cs-box-number">Personalized Selection</span>
+                    <span class="cs-box-desc">
+                        Tell us what you need and we'll customize the game lineup to match your audience and the spirit of your church event.
+                    </span>
+                </div>
+                <div class="cs-frame-accent" aria-hidden="true"></div>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c9.jpg" | resize({ width: 640, height: 3278 }) | avif %}" type="image/avif">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c9.jpg" | resize({ width: 2048, height: 2000 }) | avif %}" type="image/avif">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c9.jpg" | resize({ width: 2500, height: 1396 }) | avif %}" type="image/avif">
+            <img src="{% getUrl "/assets/images/c9.jpg" | resize({ width: 2500, height: 1396 }) | jpeg %}" alt="Retro neon grid corridor with glowing purple buildings" width="1920" height="1072" loading="lazy" decoding="async">
+        </picture>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
