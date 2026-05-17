@@ -1,0 +1,62 @@
+---
+description: "Book AFK Mobile Arcade for your next event in Greensboro, NC. Fill out our contact form and we'll confirm availability and lock in your gaming party."
+eleventyComputed:
+  title: "{{ page.fileSlug | titleCase }} | {{ client.name }} | {{ client.address.city }}, {{ client.address.state }}"
+  permalink: "/{{ page.fileSlug | slugify }}/"
+---
+
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    
+    <link rel="stylesheet" href="/assets/css/{{ page.fileSlug }}.css">
+
+    <!-- Any page-specific tags that belong in the <head> -->
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Book Now</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/book-now/" class="cs-link cs-active">Book Now</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" alt="AFK Mobile Arcade trailer parked in neon-lit cityscape" width="1920" height="550" loading="lazy" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                  Content                     -->
+    <!-- ============================================ -->
+
+    <section id="content-1450">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div id="bookeo_position" class="cs-bookeo"></div>
+                <script src="https://bookeo.com/widget.js?a=415556MPUHT196B02C2DA9"></script>
+            </div>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %} 
+
+{% endblock %}

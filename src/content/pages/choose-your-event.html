@@ -1,0 +1,192 @@
+---
+description: "Choose your event type and let us know how we can help you make your next event unforgettable."
+image: "OPTIONAL - If an image path is specified here, it will be used for that page's OG image. Useful for blog posts (implemented as standard with this kit)"
+eleventyComputed:
+  title: "{{ page.fileSlug | titleCase }} | {{ client.name }} | {{ client.address.city }}, {{ client.address.state }}"
+  permalink: "/{{ page.fileSlug | slugify }}/"
+---
+
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    
+    <link rel="stylesheet" href="/assets/css/{{ page.fileSlug }}.css">
+
+    <!-- Any page-specific tags that belong in the <head> -->
+
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Choose Your Event</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/choose-your-event/" class="cs-link cs-active">Choose Your Event</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" alt="AFK Mobile Arcade trailer parked in neon-lit cityscape" width="1920" height="550" loading="lazy" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services-2198">
+        <div class="cs-container">
+            <div class="cs-content">
+                
+                <div class="cs-flex">
+                    <span class="cs-topper">Events We Cover</span>
+                    <h2 class="cs-title">We Show Up for Every Occasion</h2>
+                </div>
+
+                <p class="cs-text">Whether it's a birthday bash, a school festival, or a corporate team-builder, AFK Mobile Arcade delivers an exciting, stress-free gaming experience tailored to fit your event perfectly.</p>
+            </div>                  
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <a href="/birthday-parties/" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c2.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c2.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c2.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c2.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="Animated children in colorful pixel-art game world" width="413" height="340" loading="lazy" decoding="async">
+                            <div class="cs-frame-accent" aria-hidden="true"></div>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Birthday Parties</h3>
+                        </div>
+                        <p class="cs-item-text">
+                            Transform your kid's special day into an unforgettable and truly epic gaming adventure that they'll be talking about for many exciting and joyful years to come.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="/school-events/" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c3.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c3.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c3.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c3.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="AFK Mobile Arcade truck and trailer in parking lot" width="413" height="340" loading="lazy" decoding="async">
+                            <div class="cs-frame-accent" aria-hidden="true"></div>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">School Events</h3>
+                        </div>
+                        <p class="cs-item-text">
+                            From exciting field days to vibrant fall festivals, we bring engaging, student-approved entertainment that both teachers and kids absolutely love and enjoy.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="/corporate-events/" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c4.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c4.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c4.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c4.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="Large group of children posing before gaming trailer" width="413" height="340" loading="lazy" decoding="async">
+                            <div class="cs-frame-accent" aria-hidden="true"></div>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Corporate Events</h3>
+                        </div>
+                        <p class="cs-item-text">
+                            Boost team morale and make your next company event truly memorable with a fun, competitive, and inclusive gaming experience for everyone involved.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="/church-events/" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c5.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c5.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c5.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c5.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="Glowing neon gothic cathedral under starry night sky" width="413" height="340" loading="lazy" decoding="async">
+                            <div class="cs-frame-accent" aria-hidden="true"></div>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Church Events</h3>
+                        </div>
+                        <p class="cs-item-text">
+                            Create stronger community bonds with wholesome, family-friendly gaming entertainment that's perfect for youth groups and congregation gatherings alike.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="/non-profit-events/" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c6.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c6.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c6.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c6.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="Futuristic neon-lit arcade hallway with glowing portal" width="413" height="340" loading="lazy" decoding="async">
+                            <div class="cs-frame-accent" aria-hidden="true"></div>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Non-Profit Events</h3>
+                        </div>
+                        <p class="cs-item-text">
+                            Support your important cause while keeping attendees thoroughly entertained. Our game truck is a crowd-pleasing addition to any fundraiser or charity event you organize.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="/other-events/" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c7.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="People exploring vibrant neon arcade in digital illustration" width="413" height="340" loading="lazy" decoding="async">
+                            <div class="cs-frame-accent" aria-hidden="true"></div>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Other Events</h3>
+                        </div>
+                        <p class="cs-item-text">
+                            Have something truly unique and exciting in mind? We're incredibly flexible and love a good challenge — reach out and let's make it happen together, step by step.
+                        </p>
+                    </a>
+                </li>
+            </ul>
+            <a href="/services/" class="cs-button-solid">Explore All Event Types</a>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %} 
+
+{% endblock %}

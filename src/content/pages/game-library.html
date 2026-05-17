@@ -1,0 +1,328 @@
+---
+description: "Choose your event type and let us know how we can help you make your next event unforgettable."
+image: "OPTIONAL - If an image path is specified here, it will be used for that page's OG image. Useful for blog posts (implemented as standard with this kit)"
+eleventyComputed:
+  title: "{{ page.fileSlug | titleCase }} | {{ client.name }} | {{ client.address.city }}, {{ client.address.state }}"
+  permalink: "/{{ page.fileSlug | slugify }}/"
+---
+
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    
+    <link rel="stylesheet" href="/assets/css/{{ page.fileSlug }}.css">
+
+    <!-- Any page-specific tags that belong in the <head> -->
+
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Game Library</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/game-library/" class="cs-link cs-active">Game Library</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" alt="AFK Mobile Arcade trailer parked in neon-lit cityscape" width="1920" height="550" loading="lazy" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services-2198">
+        <div class="cs-container">
+            <div class="cs-content">
+                
+                <div class="cs-flex">
+                    <span class="cs-topper">Events We Cover</span>
+                    <h2 class="cs-title">We Show Up for Every Occasion</h2>
+                </div>
+
+                <p class="cs-text">Whether it's a birthday bash, a school festival, or a corporate team-builder, AFK Mobile Arcade delivers an exciting, stress-free gaming experience tailored to fit your event perfectly.</p>
+            </div>                  
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <a href="/birthday-parties/" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c2.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c2.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c2.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c2.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="Animated children in colorful pixel-art game world" width="413" height="340" loading="lazy" decoding="async">
+                            <div class="cs-frame-accent" aria-hidden="true"></div>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Birthday Parties</h3>
+                        </div>
+                        <p class="cs-item-text">
+                            Transform your kid's special day into an unforgettable and truly epic gaming adventure that they'll be talking about for many exciting and joyful years to come.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="/school-events/" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c3.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c3.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c3.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c3.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="AFK Mobile Arcade truck and trailer in parking lot" width="413" height="340" loading="lazy" decoding="async">
+                            <div class="cs-frame-accent" aria-hidden="true"></div>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">School Events</h3>
+                        </div>
+                        <p class="cs-item-text">
+                            From exciting field days to vibrant fall festivals, we bring engaging, student-approved entertainment that both teachers and kids absolutely love and enjoy.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="/corporate-events/" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c4.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c4.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c4.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c4.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="Large group of children posing before gaming trailer" width="413" height="340" loading="lazy" decoding="async">
+                            <div class="cs-frame-accent" aria-hidden="true"></div>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Corporate Events</h3>
+                        </div>
+                        <p class="cs-item-text">
+                            Boost team morale and make your next company event truly memorable with a fun, competitive, and inclusive gaming experience for everyone involved.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="/church-events/" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c5.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c5.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c5.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c5.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="Glowing neon gothic cathedral under starry night sky" width="413" height="340" loading="lazy" decoding="async">
+                            <div class="cs-frame-accent" aria-hidden="true"></div>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Church Events</h3>
+                        </div>
+                        <p class="cs-item-text">
+                            Create stronger community bonds with wholesome, family-friendly gaming entertainment that's perfect for youth groups and congregation gatherings alike.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="/non-profit-events/" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c6.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c6.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c6.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c6.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="Futuristic neon-lit arcade hallway with glowing portal" width="413" height="340" loading="lazy" decoding="async">
+                            <div class="cs-frame-accent" aria-hidden="true"></div>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Non-Profit Events</h3>
+                        </div>
+                        <p class="cs-item-text">
+                            Support your important cause while keeping attendees thoroughly entertained. Our game truck is a crowd-pleasing addition to any fundraiser or charity event you organize.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="/other-events/" class="cs-link">
+                        <picture class="cs-picture">
+                            <!--Mobile Image-->
+                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                            <!--Tablet Image-->
+                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
+                            <!--Desktop Image-->
+                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
+                            <img src="{% getUrl "/assets/images/c7.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="People exploring vibrant neon arcade in digital illustration" width="413" height="340" loading="lazy" decoding="async">
+                            <div class="cs-frame-accent" aria-hidden="true"></div>
+                        </picture>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Other Events</h3>
+                        </div>
+                        <p class="cs-item-text">
+                            Have something truly unique and exciting in mind? We're incredibly flexible and love a good challenge — reach out and let's make it happen together, step by step.
+                        </p>
+                    </a>
+                </li>
+            </ul>
+            <a href="/services/" class="cs-button-solid">Explore All Event Types</a>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                     FAQ                      -->
+    <!-- ============================================ -->
+
+    <section id="faq-2389">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Game Truck</span>
+                <h1 class="cs-title">What makes our game truck so awesome?</h1>
+                <ul class="cs-faq-group">
+                    <li class="cs-faq-item active">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Designed for Virtual Reality!
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Our VR game truck is your gateway to the future of gaming! With sleek, modern design and organized stations for comfort and efficiency, you'll step into fully immersive worlds that respond to your every action. Put on a VR headset and experience heart-pounding adventures, from dodging obstacles to wielding powerful weapons. It's gaming redefined and unlike anything you've ever experienced!
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Climate Controlled
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            No need to worry about the weather! Our game theater is equipped with air conditioning for hot days and cozy fireplaces in both trucks to keep you warm on chilly ones.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Self Powered
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Power on the go! Our generator ensures uninterrupted gameplay at our video game truck, no need for home plug-ins.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Up to 25 players!
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Imagine this: you, your friends, and family coming together in an amazing game truck, surrounded by massive screens, powerful sound systems, and an electrifying gaming vibe. Laughter fills the air as you compete, collaborate, and cheer each other on in your favorite multiplayer games. Whether you're teaming up for an intense battle royale, speeding toward the finish line, or exploring incredible virtual worlds, the game truck delivers the ultimate mobile party—filled with excitement, connection, and memories that last a lifetime!
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Seating
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Kick off the fun with music! At AFK Mobile Arcade, we keep the vibe alive with kid-friendly tunes. Our custom audio system and sound bars over each TV deliver an immersive sound experience, ensuring every corner of the game truck is filled with energy and excitement.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Led Lights
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Immerse yourself in the ultimate gaming experience with vibrant LED lighting that turns the game truck into a thrilling, high-tech arena. The dynamic lights pulse and change colors, creating an electrifying atmosphere that elevates every gaming session. Whether it's a calming blue glow for a laid-back vibe or bold reds and greens for action-packed excitement, the LED lights add energy, style, and a one-of-a-kind visual flair to your adventure!
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                State of the art Wi-fi
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            WiFi in a video game truck elevates the experience by opening up a world of possibilities. With high-speed internet, players can dive into online multiplayer games, connecting with friends and gamers worldwide. It keeps games up-to-date with the latest features and provides access to vast online libraries and downloadable content. Plus, WiFi enables live streaming, sharing epic moments on social media, and hosting virtual tournaments. It's more than just gaming—it's about staying connected, dynamic, and ready for the future!
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Online Gaming
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Take gaming to the next level with online multiplayer action in our video game truck! Connect with friends or challenge players from around the world in your favorite games, all from the comfort of our high-tech mobile gaming arena. Experience the thrill of teaming up for epic battles, competing in fast-paced matches, or exploring virtual worlds together, all with lightning-fast internet and a setup designed to maximize fun. Online gaming in the truck means endless possibilities and non stop excitement!
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Surround Sound Audio System
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Get the party started with music! At AFK Mobile Arcade, we set the perfect vibe with kid-friendly tunes. Our custom audio system and sound bars over each TV deliver rich, immersive sound.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                We got the latest Games
+                            </span>
+                            <span class="cs-indicator" aria-hidden="true"></span>
+                        </button>
+                        <p class="cs-item-p">
+                            Pick from PS5, Xbox Series S/X, Nintendo Switch, and retro games! Our ample controllers ensure everyone gets in on the action. AFK Mobile Arcade offers an ever-growing game library!
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c25.jpg" | resize({ width: 640, height: 2422 }) | avif %}" type="image/avif">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c25.jpg" | resize({ width: 2048, height: 1820 }) | avif %}" type="image/avif">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c25.jpg" | resize({ width: 2500, height: 1257 }) | avif %}" type="image/avif">
+            <img src="{% getUrl "/assets/images/c25.jpg" | resize({ width: 2500, height: 1257 }) | jpeg %}" alt="Illustrated retro arcade room with neon-lit cabinets" width="1920" height="965" loading="lazy" decoding="async">
+        </picture>
+    </section>
+
+    <script defer src="/assets/js/faq.js"></script>
+
+    {% include 'sections/cta.html' %} 
+
+{% endblock %}

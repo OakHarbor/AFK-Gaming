@@ -85,34 +85,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="cs-li cs-dropdown">
-                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/red-station/" or page.url == "/blue-station/" or page.url == "/green-station/" or page.url == "/yellow-station/" or page.url == "/orange-station/" or page.url == "/purple-station/" or page.url == "/pink-station/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="game-dropdown-toggle">
-                            Game Gallery
-                            <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
-                        </button>
-                        <ul class="cs-drop-ul" aria-labelledby="game-dropdown-toggle">
-                            <li class="cs-drop-li">
-                                <a href="/red-station/" class="cs-li-link cs-drop-link">Red Station</a>
-                            </li>   
-                            <li class="cs-drop-li">
-                                <a href="/blue-station/" class="cs-li-link cs-drop-link">Blue Station</a>
-                            </li>
-                              <li class="cs-drop-li">
-                                <a href="/green-station/" class="cs-li-link cs-drop-link">Green Station</a>
-                            </li>
-                             <li class="cs-drop-li">
-                                <a href="/yellow-station/" class="cs-li-link cs-drop-link">Yellow Station</a>
-                            </li>
-                             <li class="cs-drop-li">
-                                <a href="/green-station/" class="cs-li-link cs-drop-link">Orange Station</a>
-                            </li>
-                             <li class="cs-drop-li">
-                                <a href="/purple-station/" class="cs-li-link cs-drop-link">Purple Station</a>
-                            </li>
-                             <li class="cs-drop-li">
-                                <a href="/pink-station/" class="cs-li-link cs-drop-link">Pink Station</a>
-                            </li>
-                        </ul>
+                    <li class="cs-li">
+                        <a href="/game-library/" class="cs-li-link {% if page.url == "/game-library/" %} cs-active {% endif %}" {% if page.url == "/game-library/" %} aria-current="page" {% endif %}>
+                            Game Library
+                        </a>
                     </li>
                     <li class="cs-li">
                         <a href="/about/" class="cs-li-link {% if page.url == "/about/" %} cs-active {% endif %}" {% if page.url == "/about/" %} aria-current="page" {% endif %}>
