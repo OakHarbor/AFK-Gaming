@@ -1,0 +1,197 @@
+---
+description: "Find AFK Mobile Arcade listed across the web. We're on Google, Yelp, Facebook, and 30+ online business directories serving Greensboro, NC."
+eleventyComputed:
+  title: "{{ page.fileSlug | titleCase }} | {{ client.name }} | {{ client.address.city }}, {{ client.address.state }}"
+  permalink: "/{{ page.fileSlug | slugify }}/"
+---
+
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+
+    <link rel="stylesheet" href="/assets/css/{{ page.fileSlug }}.css">
+
+    <!-- Any page-specific tags that belong in the <head> -->
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Online Listings</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/online-listings/" class="cs-link cs-active">Online Listings</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" alt="AFK Mobile Arcade trailer parked in neon-lit cityscape" width="1920" height="550" loading="lazy" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                    Intro                     -->
+    <!-- ============================================ -->
+
+    <section id="content-1450">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Find Us Online</span>
+                <h1 class="cs-title">AFK Mobile Arcade Across the Web</h1>
+                <p class="cs-text">
+                    We put in a lot of work to make sure our valued customers can easily find us on the web through various means. Below is a list of the sites and directories where you can find us online.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--             Directory Listings               -->
+    <!-- ============================================ -->
+
+    <section id="directory-listings">
+        <div class="cs-container">
+            <ul class="cs-group-list">
+                <li class="cs-group">
+                    <span class="cs-letter">1–10</span>
+                    <ul class="cs-links">
+                        <li><a href="https://www.8coupons.com/stores/local/afk-mobile-arcade-greensboro-27406-2015177674" target="_blank" rel="noopener">8coupons</a></li>
+                    </ul>
+                </li>
+                <li class="cs-group">
+                    <span class="cs-letter">A</span>
+                    <ul class="cs-links">
+                        <li><a href="https://www.yext.com/partnerpages/aroundme/afk-mobile-arcade-greensboro-north-carolina-us-604441" target="_blank" rel="noopener">AroundMe</a></li>
+                    </ul>
+                </li>
+                <li class="cs-group">
+                    <span class="cs-letter">B</span>
+                    <ul class="cs-links">
+                        <li><a href="https://www.bing.com/maps?ss=ypid.YN873x11685170848503397328&mkt=en-US" target="_blank" rel="noopener">Bing</a></li>
+                        <li><a href="https://www.brownbook.net/business/53902307/afk-mobile-arcade/" target="_blank" rel="noopener">Brownbook.net</a></li>
+                    </ul>
+                </li>
+                <li class="cs-group">
+                    <span class="cs-letter">C</span>
+                    <ul class="cs-links">
+                        <li><a href="https://us.centralindex.com/company/29faa02f871bf7ec232632aea3af2775" target="_blank" rel="noopener">CentralIndex</a></li>
+                        <li><a href="https://www.chamberofcommerce.com/business-directory/north-carolina/greensboro/party-equipment-rental-service/2033645894-afk-mobile-arcade" target="_blank" rel="noopener">ChamberofCommerce.com</a></li>
+                        <li><a href="https://citysquares.com/b/afk-mobile-arcade-26311752" target="_blank" rel="noopener">CitySquares</a></li>
+                        <li><a href="https://www.cylex.us.com/company/afk-mobile-arcade-39800197.html" target="_blank" rel="noopener">Cylex</a></li>
+                    </ul>
+                </li>
+                <li class="cs-group">
+                    <span class="cs-letter">D</span>
+                    <ul class="cs-links">
+                        <li><a href="https://www.dexknows.com/info-579015924/a/" target="_blank" rel="noopener">DexKnows</a></li>
+                    </ul>
+                </li>
+                <li class="cs-group">
+                    <span class="cs-letter">E</span>
+                    <ul class="cs-links">
+                        <li><a href="https://ezlocal.com/nc/greensboro/party-equipment-rental-service/0919015295" target="_blank" rel="noopener">EZlocal</a></li>
+                    </ul>
+                </li>
+                <li class="cs-group">
+                    <span class="cs-letter">F</span>
+                    <ul class="cs-links">
+                        <li><a href="https://www.facebook.com/profile.php?id=61559872801245" target="_blank" rel="noopener">Facebook</a></li>
+                    </ul>
+                </li>
+                <li class="cs-group">
+                    <span class="cs-letter">G</span>
+                    <ul class="cs-links">
+                        <li><a href="https://www.golocal247.com/biz/afk-mobile-arcade/greensboro-nc/YEXT3925977" target="_blank" rel="noopener">GoLocal247</a></li>
+                        <li><a href="https://maps.app.goo.gl/4YXcYKjicPHFfZ8g7" target="_blank" rel="noopener">Google Business Profile</a></li>
+                    </ul>
+                </li>
+                <li class="cs-group">
+                    <span class="cs-letter">H</span>
+                    <ul class="cs-links">
+                        <li><a href="https://www.hotfrog.com/company/084f277a07fa3e45a14522d0d4dd2acc" target="_blank" rel="noopener">Hotfrog</a></li>
+                    </ul>
+                </li>
+                <li class="cs-group">
+                    <span class="cs-letter">I</span>
+                    <ul class="cs-links">
+                        <li><a href="https://www.ibegin.com/directory/visit/19987751" target="_blank" rel="noopener">iBegin</a></li>
+                        <li><a href="https://www.iglobal.co/united-states/greensboro/afk-mobile-arcade" target="_blank" rel="noopener">iGlobal</a></li>
+                        <li><a href="https://www.instagram.com/afkmobilearcade" target="_blank" rel="noopener">Instagram</a></li>
+                    </ul>
+                </li>
+                <li class="cs-group">
+                    <span class="cs-letter">M</span>
+                    <ul class="cs-links">
+                        <li><a href="https://www.mapquest.com/places/-792169581/" target="_blank" rel="noopener">MapQuest</a></li>
+                        <li><a href="https://www.merchantcircle.com/afk-mobile-arcade1-greensboro-nc" target="_blank" rel="noopener">MerchantCircle</a></li>
+                        <li><a href="https://www.mylocalservices.com/AFK+Mobile+Arcade-Greensboro-North+Carolina-25500299.html" target="_blank" rel="noopener">My Local Services</a></li>
+                    </ul>
+                </li>
+                <li class="cs-group">
+                    <span class="cs-letter">N</span>
+                    <ul class="cs-links">
+                        <li><a href="https://www.n49.com/biz/6580559" target="_blank" rel="noopener">n49</a></li>
+                        <li><a href="https://nextdoor.com/pages/afk-mobile-arcade-greensboro-nc/" target="_blank" rel="noopener">Nextdoor</a></li>
+                    </ul>
+                </li>
+                <li class="cs-group">
+                    <span class="cs-letter">O</span>
+                    <ul class="cs-links">
+                        <li><a href="https://greensboro-nc.opendi.us/13146684.html" target="_blank" rel="noopener">Opendi</a></li>
+                    </ul>
+                </li>
+                <li class="cs-group">
+                    <span class="cs-letter">S</span>
+                    <ul class="cs-links">
+                        <li><a href="https://www.showmelocal.com/profile.aspx?bid=38650567" target="_blank" rel="noopener">ShowMeLocal</a></li>
+                        <li><a href="https://www.superpages.com/info-579015924/a/" target="_blank" rel="noopener">Superpages</a></li>
+                    </ul>
+                </li>
+                <li class="cs-group">
+                    <span class="cs-letter">T</span>
+                    <ul class="cs-links">
+                        <li><a href="https://www.tupalo.co/greensboro-north-carolina/afk-mobile-arcade" target="_blank" rel="noopener">Tupalo</a></li>
+                    </ul>
+                </li>
+                <li class="cs-group">
+                    <span class="cs-letter">U</span>
+                    <ul class="cs-links">
+                        <li><a href="https://uscity.net/listing/afk_mobile_arcade-11946689" target="_blank" rel="noopener">USCity.net</a></li>
+                    </ul>
+                </li>
+                <li class="cs-group">
+                    <span class="cs-letter">W</span>
+                    <ul class="cs-links">
+                        <li><a href="https://wheretoapp.com/search?poi=77f09d6841a3a89cffb007211dba99ef" target="_blank" rel="noopener">Where To?</a></li>
+                    </ul>
+                </li>
+                <li class="cs-group">
+                    <span class="cs-letter">Y</span>
+                    <ul class="cs-links">
+                        <li><a href="https://www.yellowpages.com/info-579015924/a/" target="_blank" rel="noopener">Yellow Pages</a></li>
+                        <li><a href="https://www.yellowpagesdirectory.com/?page=show&state=NC&id=375119" target="_blank" rel="noopener">YellowPagesDirectory</a></li>
+                        <li><a href="https://www.yelp.com/biz/afk-mobile-arcade-greensboro?adjust_creative=MFyzcjahxBMNAyHg85HGjg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=MFyzcjahxBMNAyHg85HGjg" target="_blank" rel="noopener">Yelp</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}

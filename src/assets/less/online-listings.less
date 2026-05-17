@@ -1,0 +1,129 @@
+/*-- -------------------------- -->
+<---            Intro           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #content-1450 {
+        padding: var(--sectionPadding);
+        background-color: var(--primaryBg);
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cs-content {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cs-title {
+            max-width: 100%;
+        }
+
+        .cs-text {
+            /* 16px - 20px */
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            max-width: (640/16rem);
+            margin: 0;
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---      Directory Listings    -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #directory-listings {
+        padding: var(--sectionPadding);
+        background-color: var(--primaryBgAlt);
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+        }
+
+        .cs-group-list {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: clamp(2rem, 5vw, 4rem);
+            row-gap: clamp(1.5rem, 4vw, 2.5rem);
+        }
+
+        .cs-group {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: (8/16rem);
+        }
+
+        .cs-letter {
+            /* 18px - 22px */
+            font-size: clamp(1.125rem, 2vw, 1.375rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            color: var(--primary);
+            font-family: var(--headerFont);
+            display: block;
+            padding-bottom: (8/16rem);
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: (4/16rem);
+        }
+
+        .cs-links {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: (6/16rem);
+
+            li {
+                list-style: none;
+            }
+
+            a {
+                font-size: (15/16rem);
+                line-height: 1.5em;
+                color: var(--bodyTextColor);
+                text-decoration: none;
+                transition: color .3s;
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #directory-listings {
+        .cs-group-list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #directory-listings {
+        .cs-group-list {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

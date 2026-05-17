@@ -1,0 +1,191 @@
+---
+description: "AFK Mobile Arcade SMS terms of service. Understand your rights and responsibilities when opting into our text messaging communications."
+eleventyComputed:
+  title: "{{ page.fileSlug | titleCase }} | {{ client.name }} | {{ client.address.city }}, {{ client.address.state }}"
+  permalink: "/{{ page.fileSlug | slugify }}/"
+---
+
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+
+    <link rel="stylesheet" href="/assets/css/policies.css">
+
+    <!-- Any page-specific tags that belong in the <head> -->
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Terms of Service</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/terms-of-service/" class="cs-link cs-active">Terms of Service</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" alt="AFK Mobile Arcade trailer parked in neon-lit cityscape" width="1920" height="550" loading="lazy" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                Side By Side                  -->
+    <!-- ============================================ -->
+
+    <section id="sbs-2233">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">SMS Communications</span>
+                <h1 class="cs-title">Straightforward Terms, No Surprises</h1>
+                <p class="cs-text">These terms govern how AFK Mobile Arcade communicates with you via SMS. By opting in, you agree to receive messages related to your bookings, scheduling, and event updates.</p>
+                <p class="cs-text">We keep things simple: you're always in control, and you can opt out at any time by replying STOP to any message we send.</p>
+
+                <div class="cs-section">
+                    <h2>SMS Terms &amp; Conditions</h2>
+                </div>
+
+                <div class="cs-section">
+                    <h3>1) SMS Consent Communication</h3>
+                    <p>The information and phone numbers obtained as part of the SMS consent process will not be shared with third parties for marketing purposes.</p>
+                </div>
+
+                <div class="cs-section">
+                    <h3>2) Types of SMS Communications</h3>
+                    <p>If you have consented to receive text messages from AFK Mobile Arcade, you may receive messages related to the following:</p>
+                    <ul>
+                        <li>Appointment reminders</li>
+                        <li>Follow-up messages</li>
+                        <li>Billing inquiries</li>
+                        <li>Scheduling</li>
+                        <li>Updates</li>
+                        <li>Customer care</li>
+                        <li>Marketing</li>
+                    </ul>
+                </div>
+
+                <div class="cs-section">
+                    <h3>3) Message Frequency</h3>
+                    <p>Message frequency may vary depending on the type of communication. For example, you may receive up to 2 SMS messages per week related to your booking.</p>
+                </div>
+
+                <div class="cs-section">
+                    <h3>4) Potential Fees for SMS Messaging</h3>
+                    <p>Please note that standard message and data rates may apply, depending on your carrier's pricing plan. These fees may vary if the message is sent domestically or internationally.</p>
+                </div>
+
+                <div class="cs-section">
+                    <h3>5) Opt-In Method</h3>
+                    <p>You may opt in to receive SMS messages from AFK Mobile Arcade in the following ways:</p>
+                    <ul>
+                        <li>Verbally, during a conversation</li>
+                        <li>By messaging us first</li>
+                        <li>By submitting an online form</li>
+                        <li>By contacting us directly at <a href="mailto:afkmobilearcade@gmail.com">afkmobilearcade@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="cs-section">
+                    <h3>6) Opt-Out Method</h3>
+                    <p>You can opt out of receiving SMS messages at any time. To do so, simply reply "STOP" to any SMS message you receive. Alternatively, you can contact us directly at <a href="mailto:afkmobilearcade@gmail.com">afkmobilearcade@gmail.com</a> to request removal from our messaging list.</p>
+                </div>
+
+                <div class="cs-section">
+                    <h3>7) Help</h3>
+                    <p>If you are experiencing any issues, you can reply with the keyword HELP. Or, you can get help directly from us at <a href="mailto:afkmobilearcade@gmail.com">afkmobilearcade@gmail.com</a>.</p>
+                </div>
+
+                <div class="cs-section">
+                    <h3>8) Standard Messaging Disclosures</h3>
+                    <div class="cs-notice">
+                        <ul>
+                            <li>Message and data rates may apply.</li>
+                            <li>You can opt out at any time by texting "STOP."</li>
+                            <li>For assistance, text "HELP" or visit our <a href="/privacy-policy/">Privacy Policy</a> and <a href="/terms-of-service/">Terms of Service</a> pages.</li>
+                            <li>Message frequency may vary.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr class="cs-divider">
+
+                <div class="cs-section">
+                    <h2>Privacy Policy</h2>
+                </div>
+
+                <div class="cs-section">
+                    <ul class="cs-policy-list">
+                        <li><strong>Introduction:</strong> AFK Mobile Arcade is your solution for parties and events. We bring the fun to you with our video game trailer rentals. Our Privacy Policy outlines how we use your information in delivering our services.</li>
+                        <li><strong>Types of Information Collected:</strong> AFK Mobile Arcade collects information based on your submission. This information includes your name, address, phone number, and email address for the purposes of confirming your booking and arriving at the address specified for scheduled events.</li>
+                        <li><strong>Method of Information Collection:</strong> AFK Mobile Arcade collects your data through your online form submissions, SMS contacts, and email contacts.</li>
+                        <li><strong>Purpose of Data Collection:</strong> AFK Mobile Arcade collects data for the purposes of delivering our services to our customers. When you contact AFK Mobile Arcade we will use the information provided to book your event and confirm your event, date, and location.</li>
+                        <li><strong>Data Security Measures:</strong> The data collected by AFK Mobile Arcade is used strictly for the purposes of contacting and confirming customer bookings. Your information is stored on our secure servers.</li>
+                        <li><strong>Data Sharing:</strong> AFK Mobile Arcade will not share your data with third parties.</li>
+                        <li><strong>User Rights:</strong> We retain your information as long as you are subscribed to our SMS service. You may request deletion at any time.</li>
+                        <li><strong>Contact Information:</strong> For any questions regarding your privacy, contact us at <a href="mailto:afkmobilearcade@gmail.com">afkmobilearcade@gmail.com</a> or call us at <a href="tel:+18667529235">(866) 752-9235</a>.</li>
+                    </ul>
+                </div>
+
+                <div class="cs-section">
+                    <p>For assistance, text "HELP" or visit our <a href="/privacy-policy/">Privacy Policy</a> and <a href="/terms-of-service/">Terms of Service</a> pages.</p>
+                </div>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c1.jpg" | resize({ width: 516, height: 628 }) | avif %}" type="image/avif">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c1.jpg" | resize({ width: 716, height: 1020 }) | avif %}" type="image/avif">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c1.jpg" | resize({ width: 1120, height: 1136 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/c1.jpg" | resize({ width: 1120, height: 1136 }) | jpeg %}" alt="Kids playing video games inside mobile gaming trailer" width="560" height="568" loading="lazy" decoding="async">
+                </picture>
+                <p class="cs-caption">Always Transparent, <br/> Always in Control</p>
+                <div class="cs-frame-accent" aria-hidden="true"></div>
+            </div>
+            <img class="cs-graphic" src="/assets/images/graphic-1.png" alt="arcade console" aria-hidden="true" width="411" height="244" />
+        </div>
+        <picture class="cs-top-shape">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 664 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 664 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 464 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 464 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 398 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 398 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 398 }) | png %}" alt="" width="1920" height="306" loading="lazy" decoding="async">
+        </picture>
+        <picture class="cs-bottom-shape">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 640, height: 664 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 640, height: 664 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2048, height: 464 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2048, height: 464 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 398 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 398 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 398 }) | png %}" alt="" width="1920" height="306" loading="lazy" decoding="async">
+        </picture>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}

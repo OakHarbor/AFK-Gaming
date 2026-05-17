@@ -55,135 +55,115 @@ eleventyComputed:
             <div class="cs-content">
                 
                 <div class="cs-flex">
-                    <span class="cs-topper">Events We Cover</span>
-                    <h2 class="cs-title">We Show Up for Every Occasion</h2>
+                    <span class="cs-topper">Game Library</span>
+                    <h2 class="cs-title">Games by Station</h2>
                 </div>
 
-                <p class="cs-text">Whether it's a birthday bash, a school festival, or a corporate team-builder, AFK Mobile Arcade delivers an exciting, stress-free gaming experience tailored to fit your event perfectly.</p>
-            </div>                  
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <a href="/birthday-parties/" class="cs-link">
-                        <picture class="cs-picture">
-                            <!--Mobile Image-->
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c2.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
-                            <!--Tablet Image-->
-                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c2.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
-                            <!--Desktop Image-->
-                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c2.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
-                            <img src="{% getUrl "/assets/images/c2.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="Animated children in colorful pixel-art game world" width="413" height="340" loading="lazy" decoding="async">
-                            <div class="cs-frame-accent" aria-hidden="true"></div>
-                        </picture>
-                        <div class="cs-flex">
-                            <h3 class="cs-h3">Birthday Parties</h3>
-                        </div>
-                        <p class="cs-item-text">
-                            Transform your kid's special day into an unforgettable and truly epic gaming adventure that they'll be talking about for many exciting and joyful years to come.
-                        </p>
-                    </a>
+                <p class="cs-text">If you don't see the game you would like us to bring to your event, let us know and we will make sure to bring it!</p>
+            </div>
+            <ul class="cs-station-group">
+                <li class="cs-station cs-station--red">
+                    <div class="cs-station-header">
+                        <h3 class="cs-h3">Red Station</h3>
+                        <span class="cs-station-platform">PS5 Games</span>
+                    </div>
+                    <ul class="cs-station-games">
+                        <li>FIFA 25</li>
+                        <li>Minecraft</li>
+                        <li>Street Fighter 6</li>
+                        <li>Streets of Rage 4</li>
+                        <li>Untitled Goose Game</li>
+                        <li>Rocket League</li>
+                        <li>Roblox</li>
+                        <li>Fortnite</li>
+                    </ul>
                 </li>
-                <li class="cs-item">
-                    <a href="/school-events/" class="cs-link">
-                        <picture class="cs-picture">
-                            <!--Mobile Image-->
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c3.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
-                            <!--Tablet Image-->
-                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c3.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
-                            <!--Desktop Image-->
-                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c3.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
-                            <img src="{% getUrl "/assets/images/c3.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="AFK Mobile Arcade truck and trailer in parking lot" width="413" height="340" loading="lazy" decoding="async">
-                            <div class="cs-frame-accent" aria-hidden="true"></div>
-                        </picture>
-                        <div class="cs-flex">
-                            <h3 class="cs-h3">School Events</h3>
-                        </div>
-                        <p class="cs-item-text">
-                            From exciting field days to vibrant fall festivals, we bring engaging, student-approved entertainment that both teachers and kids absolutely love and enjoy.
-                        </p>
-                    </a>
+                <li class="cs-station cs-station--blue">
+                    <div class="cs-station-header">
+                        <h3 class="cs-h3">Blue Station</h3>
+                        <span class="cs-station-platform">PS5 Games</span>
+                    </div>
+                    <ul class="cs-station-games">
+                        <li>NBA 2K</li>
+                        <li>Sonic Superstars</li>
+                        <li>Rocket League</li>
+                        <li>Nickelodeon All Star Brawl 2</li>
+                        <li>Hot Wheels Turbocharged</li>
+                        <li>Alienation</li>
+                        <li>Roblox</li>
+                        <li>Fortnite</li>
+                        <li>Crash Team Racing Nitro Fueled</li>
+                    </ul>
                 </li>
-                <li class="cs-item">
-                    <a href="/corporate-events/" class="cs-link">
-                        <picture class="cs-picture">
-                            <!--Mobile Image-->
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c4.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
-                            <!--Tablet Image-->
-                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c4.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
-                            <!--Desktop Image-->
-                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c4.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
-                            <img src="{% getUrl "/assets/images/c4.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="Large group of children posing before gaming trailer" width="413" height="340" loading="lazy" decoding="async">
-                            <div class="cs-frame-accent" aria-hidden="true"></div>
-                        </picture>
-                        <div class="cs-flex">
-                            <h3 class="cs-h3">Corporate Events</h3>
-                        </div>
-                        <p class="cs-item-text">
-                            Boost team morale and make your next company event truly memorable with a fun, competitive, and inclusive gaming experience for everyone involved.
-                        </p>
-                    </a>
+                <li class="cs-station cs-station--yellow">
+                    <div class="cs-station-header">
+                        <h3 class="cs-h3">Yellow Station</h3>
+                        <span class="cs-station-platform">PS5 Games</span>
+                    </div>
+                    <ul class="cs-station-games">
+                        <li>Madden 25</li>
+                        <li>TMNT Shredder's Revenge</li>
+                        <li>Rocket League</li>
+                        <li>2 Overcooked 2</li>
+                        <li>Cuphead</li>
+                        <li>Sackboy</li>
+                        <li>Roblox</li>
+                        <li>Fortnite</li>
+                        <li>Gigabash</li>
+                    </ul>
                 </li>
-                <li class="cs-item">
-                    <a href="/church-events/" class="cs-link">
-                        <picture class="cs-picture">
-                            <!--Mobile Image-->
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c5.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
-                            <!--Tablet Image-->
-                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c5.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
-                            <!--Desktop Image-->
-                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c5.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
-                            <img src="{% getUrl "/assets/images/c5.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="Glowing neon gothic cathedral under starry night sky" width="413" height="340" loading="lazy" decoding="async">
-                            <div class="cs-frame-accent" aria-hidden="true"></div>
-                        </picture>
-                        <div class="cs-flex">
-                            <h3 class="cs-h3">Church Events</h3>
-                        </div>
-                        <p class="cs-item-text">
-                            Create stronger community bonds with wholesome, family-friendly gaming entertainment that's perfect for youth groups and congregation gatherings alike.
-                        </p>
-                    </a>
+                <li class="cs-station cs-station--green">
+                    <div class="cs-station-header">
+                        <h3 class="cs-h3">Green Station</h3>
+                        <span class="cs-station-platform">Switch2 Games</span>
+                    </div>
+                    <ul class="cs-station-games">
+                        <li>Mario Kart World</li>
+                        <li>Minecraft</li>
+                        <li>Rocket League</li>
+                        <li>Moving Out 2</li>
+                        <li>Pacman</li>
+                        <li>Galaga</li>
+                        <li>Fortnite</li>
+                        <li>Crash Bandicoot 4: It's about Time</li>
+                        <li>Roblox</li>
+                    </ul>
                 </li>
-                <li class="cs-item">
-                    <a href="/non-profit-events/" class="cs-link">
-                        <picture class="cs-picture">
-                            <!--Mobile Image-->
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c6.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
-                            <!--Tablet Image-->
-                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c6.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
-                            <!--Desktop Image-->
-                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c6.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
-                            <img src="{% getUrl "/assets/images/c6.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="Futuristic neon-lit arcade hallway with glowing portal" width="413" height="340" loading="lazy" decoding="async">
-                            <div class="cs-frame-accent" aria-hidden="true"></div>
-                        </picture>
-                        <div class="cs-flex">
-                            <h3 class="cs-h3">Non-Profit Events</h3>
-                        </div>
-                        <p class="cs-item-text">
-                            Support your important cause while keeping attendees thoroughly entertained. Our game truck is a crowd-pleasing addition to any fundraiser or charity event you organize.
-                        </p>
-                    </a>
+                <li class="cs-station cs-station--orange">
+                    <div class="cs-station-header">
+                        <h3 class="cs-h3">Orange Station</h3>
+                        <span class="cs-station-platform">Switch2 Games</span>
+                    </div>
+                    <ul class="cs-station-games">
+                        <li>Super Smash Broths Ultimate</li>
+                        <li>Rocket League</li>
+                        <li>Mario Tennis Aces</li>
+                        <li>Super Mario Bros Wonder</li>
+                        <li>Minecraft</li>
+                        <li>Scott Pilgrim Vs the World</li>
+                        <li>Fortnite</li>
+                    </ul>
                 </li>
-                <li class="cs-item">
-                    <a href="/other-events/" class="cs-link">
-                        <picture class="cs-picture">
-                            <!--Mobile Image-->
-                            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
-                            <!--Tablet Image-->
-                            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 634, height: 614 }) | avif %}" type="image/avif">
-                            <!--Desktop Image-->
-                            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 826, height: 680 }) | avif %}" type="image/avif">
-                            <img src="{% getUrl "/assets/images/c7.jpg" | resize({ width: 826, height: 680 }) | jpeg %}" alt="People exploring vibrant neon arcade in digital illustration" width="413" height="340" loading="lazy" decoding="async">
-                            <div class="cs-frame-accent" aria-hidden="true"></div>
-                        </picture>
-                        <div class="cs-flex">
-                            <h3 class="cs-h3">Other Events</h3>
-                        </div>
-                        <p class="cs-item-text">
-                            Have something truly unique and exciting in mind? We're incredibly flexible and love a good challenge — reach out and let's make it happen together, step by step.
-                        </p>
-                    </a>
+                <li class="cs-station cs-station--purple">
+                    <div class="cs-station-header">
+                        <h3 class="cs-h3">Purple Station</h3>
+                        <span class="cs-station-platform">PSVR2 Games</span>
+                    </div>
+                    <ul class="cs-station-games">
+                        <li>Angry Birds</li>
+                        <li>Beat Saber</li>
+                    </ul>
+                </li>
+                <li class="cs-station cs-station--pink cs-station--solo">
+                    <div class="cs-station-header">
+                        <h3 class="cs-h3">Pink Station</h3>
+                        <span class="cs-station-platform">PSVR2 Games</span>
+                    </div>
+                    <ul class="cs-station-games">
+                        <li>Beat Saber</li>
+                    </ul>
                 </li>
             </ul>
-            <a href="/services/" class="cs-button-solid">Explore All Event Types</a>
         </div>
     </section>
 

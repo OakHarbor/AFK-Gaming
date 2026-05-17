@@ -1,0 +1,87 @@
+---
+description: "Follow AFK Mobile Arcade on social media, leave us a Google review, or book our game truck for your next event in Greensboro, NC."
+eleventyComputed:
+  title: "{{ page.fileSlug | titleCase }} | {{ client.name }} | {{ client.address.city }}, {{ client.address.state }}"
+  permalink: "/{{ page.fileSlug | slugify }}/"
+---
+
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+
+    <link rel="stylesheet" href="/assets/css/{{ page.fileSlug }}.css">
+
+    <!-- Any page-specific tags that belong in the <head> -->
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Connect With Us</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/connect-with-us/" class="cs-link cs-active">Connect With Us</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" alt="AFK Mobile Arcade trailer parked in neon-lit cityscape" width="1920" height="550" loading="lazy" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                  Connect                     -->
+    <!-- ============================================ -->
+
+    <section id="content-1450">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Stay Connected</span>
+                <h1 class="cs-title">Find Us, Follow Us, and Join the Community</h1>
+                <p class="cs-text">
+                    Whether you want to follow along for event highlights and gaming news, share your experience with others, or get in touch about booking, here's where to find us.
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-card">
+                    <span class="cs-card-label">Facebook</span>
+                    <p class="cs-card-text">Follow us for event updates, behind-the-scenes content, and the latest news from AFK Mobile Arcade.</p>
+                    <a href="https://www.facebook.com/AFKmobilearcade" target="_blank" rel="noopener" class="cs-button-solid">Follow on Facebook</a>
+                </li>
+                <li class="cs-card">
+                    <span class="cs-card-label">Instagram</span>
+                    <p class="cs-card-text">See the excitement in action, real events, real smiles, real gaming moments captured live.</p>
+                    <a href="https://www.instagram.com/afkmobilearcade/" target="_blank" rel="noopener" class="cs-button-solid">Follow on Instagram</a>
+                </li>
+                <li class="cs-card">
+                    <span class="cs-card-label">Google</span>
+                    <p class="cs-card-text">Find our Google Business Profile to view hours, photos, location, and what our community is saying about us.</p>
+                    <a href="https://maps.app.goo.gl/4YXcYKjicPHFfZ8g7" target="_blank" rel="noopener" class="cs-button-solid">View on Google</a>
+                </li>
+                <li class="cs-card cs-card-highlight">
+                    <span class="cs-card-label">Leave a Review</span>
+                    <p class="cs-card-text">Had an amazing time at your event? Let the world know, your review means everything to our small business.</p>
+                    <a href="https://g.page/r/CRZkYwmvt3iwEBM/review" target="_blank" rel="noopener" class="cs-button-solid">Leave a Google Review</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}

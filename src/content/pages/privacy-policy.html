@@ -1,0 +1,145 @@
+---
+description: "AFK Mobile Arcade SMS privacy policy. Learn how we collect, use, and protect your personal data when you opt into our messaging service."
+eleventyComputed:
+  title: "{{ page.fileSlug | titleCase }} | {{ client.name }} | {{ client.address.city }}, {{ client.address.state }}"
+  permalink: "/{{ page.fileSlug | slugify }}/"
+---
+
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+
+    <link rel="stylesheet" href="/assets/css/policies.css">
+
+    <!-- Any page-specific tags that belong in the <head> -->
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Privacy Policy</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/privacy-policy/" class="cs-link cs-active">Privacy Policy</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" alt="AFK Mobile Arcade trailer parked in neon-lit cityscape" width="1920" height="550" loading="lazy" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                Side By Side                  -->
+    <!-- ============================================ -->
+
+    <section id="sbs-2233">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">SMS Privacy Policy</span>
+                <h1 class="cs-title">Your Privacy, Our Responsibility</h1>
+                <p class="cs-text">AFK Mobile Arcade respects your privacy. By opting into our SMS messaging service, you agree to the following terms regarding how we handle your data.</p>
+                <p class="cs-text">We collect only what we need, use it only to serve you, and will never share your information with third parties for marketing purposes.</p>
+
+                <div class="cs-section">
+                    <h2>Data Collection</h2>
+                    <p>We will collect your name, email address, mailing address, and mobile phone number when you sign up for SMS updates. The information will be collected via the website contact form, email, rental agreement, or third-party reservation systems.</p>
+                </div>
+
+                <div class="cs-section">
+                    <h2>Data Usage</h2>
+                    <p>We use your data solely for sending Appointment Reminders and Contact Information.</p>
+                </div>
+
+                <div class="cs-section">
+                    <h2>Data Security</h2>
+                    <p>We protect your data with secure storage measures to prevent unauthorized access.</p>
+                </div>
+
+                <div class="cs-section">
+                    <h2>Data Retention</h2>
+                    <p>We retain your information as long as you are subscribed to our SMS service. You may request deletion at any time.</p>
+                </div>
+
+                <div class="cs-section">
+                    <h2>Message and Data Rates</h2>
+                    <div class="cs-notice">
+                        <strong>MESSAGE AND DATA RATES MAY APPLY</strong>
+                        <p>Your mobile carrier may charge fees for sending or receiving text messages, especially if you do not have an unlimited texting or data plan.</p>
+                        <p>Messages are recurring, and message frequency varies.</p>
+                        <p>Contact AFK Mobile Arcade at <a href="tel:+18667529235">(866) 752-9235</a> or <a href="mailto:afkmobilearcade@gmail.com">afkmobilearcade@gmail.com</a> for HELP or to STOP receiving messages.</p>
+                    </div>
+                </div>
+
+                <div class="cs-section">
+                    <h2>Opt-Out</h2>
+                    <p>You can opt out of the SMS list at any time by texting, emailing, or replying STOP to <a href="mailto:afkmobilearcade@gmail.com">afkmobilearcade@gmail.com</a> or <a href="tel:+18667529235">(866) 752-9235</a>.</p>
+                    <p>After unsubscribing, you will receive a final SMS to confirm you have unsubscribed, and we will remove your number from our list within 24 hours.</p>
+                    <p>You can send HELP for additional assistance, and you will receive a text including our phone number, email, and website. We are here to help you.</p>
+                    <p>Mobile opt-in, SMS consent, and phone numbers collected for SMS communication purposes will not be shared with any third party or affiliates for marketing purposes.</p>
+                </div>
+
+                <div class="cs-section">
+                    <h2>Assistance</h2>
+                    <p>For assistance, text "HELP" or visit our <a href="/privacy-policy/">Privacy Policy</a> and <a href="/terms-of-service/">Terms and Conditions</a> pages.</p>
+                </div>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c1.jpg" | resize({ width: 516, height: 628 }) | avif %}" type="image/avif">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c1.jpg" | resize({ width: 716, height: 1020 }) | avif %}" type="image/avif">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c1.jpg" | resize({ width: 1120, height: 1136 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/c1.jpg" | resize({ width: 1120, height: 1136 }) | jpeg %}" alt="Kids playing video games inside mobile gaming trailer" width="560" height="568" loading="lazy" decoding="async">
+                </picture>
+                <p class="cs-caption">Your Privacy <br/> Matters to Us</p>
+                <div class="cs-frame-accent" aria-hidden="true"></div>
+            </div>
+            <img class="cs-graphic" src="/assets/images/graphic-1.png" alt="arcade console" aria-hidden="true" width="411" height="244" />
+        </div>
+        <picture class="cs-top-shape">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 664 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 664 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 464 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 464 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 398 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 398 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 398 }) | png %}" alt="" width="1920" height="306" loading="lazy" decoding="async">
+        </picture>
+        <picture class="cs-bottom-shape">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 640, height: 664 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 640, height: 664 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2048, height: 464 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2048, height: 464 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 398 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 398 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 398 }) | png %}" alt="" width="1920" height="306" loading="lazy" decoding="async">
+        </picture>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
