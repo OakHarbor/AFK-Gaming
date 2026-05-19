@@ -8,6 +8,9 @@
 /find-us-on-the-web/ /online-listings/ 301!
 /thank-you/ / 301!
 /afk-mobile-arcade-terms-of-service-for-sms-communications/ /terms-of-service/ 301!
+
+# --- Blog (mobile-gaming-truck-blog → /blog/) ---
+
 /mobile-gaming-truck-blog/ /blog/ 301!
 /mobile-gaming-truck-blog/a-gaming-trailer-can-enhance-a-wide-range-of-events/ /blog/a-gaming-trailer-can-enhance-a-wide-range-of-events/ 301!
 /mobile-gaming-truck-blog/a-quick-guide-to-our-gaming-trailer/ /blog/a-quick-guide-to-our-gaming-trailer/ 301!
@@ -24,3 +27,141 @@
 /mobile-gaming-truck-blog/why-mobile-arcades-are-perfect-for-weddings/ /blog/why-mobile-arcades-are-perfect-for-weddings/ 301!
 /mobile-gaming-truck-blog/why-you-should-consider-gaming-birthday-parties/ /blog/why-you-should-consider-gaming-birthday-parties/ 301!
 /blog/our-new-website-is-live/ /blog/ 301!
+
+# Greensboro, NC → /service-area/greensboro-nc/
+
+/game-truck-greensboro-nc/* /service-area/greensboro-nc/ 301!
+/game-truck-greensboro-nc/ /service-area/greensboro-nc/ 301!
+/gaming-trailer-greensboro-nc/* /service-area/greensboro-nc/ 301!
+/gaming-trailer-greensboro-nc/ /service-area/greensboro-nc/ 301!
+/mobile-arcade-greensboro-nc/* /service-area/greensboro-nc/ 301!
+/mobile-arcade-greensboro-nc/ /service-area/greensboro-nc/ 301!
+/video-game-truck-greensboro-nc/* /service-area/greensboro-nc/ 301!
+/video-game-truck-greensboro-nc/ /service-area/greensboro-nc/ 301!
+/video-game-events-greensboro-nc/* /service-area/greensboro-nc/ 301!
+/video-game-events-greensboro-nc/ /service-area/greensboro-nc/ 301!
+
+# Burlington, NC → /service-area/burlington-nc/
+
+/game-truck-burlington-nc/* /service-area/burlington-nc/ 301!
+/game-truck-burlington-nc/ /service-area/burlington-nc/ 301!
+/gaming-trailer-burlington-nc/* /service-area/burlington-nc/ 301!
+/gaming-trailer-burlington-nc/ /service-area/burlington-nc/ 301!
+/mobile-arcade-burlington-nc/* /service-area/burlington-nc/ 301!
+/mobile-arcade-burlington-nc/ /service-area/burlington-nc/ 301!
+/video-game-truck-burlington-nc/* /service-area/burlington-nc/ 301!
+/video-game-truck-burlington-nc/ /service-area/burlington-nc/ 301!
+/video-game-events-burlington-nc/* /service-area/burlington-nc/ 301!
+/video-game-events-burlington-nc/ /service-area/burlington-nc/ 301!
+
+# Danville, VA → /service-area/danville-va/
+
+/game-truck-danville-va/* /service-area/danville-va/ 301!
+/game-truck-danville-va/ /service-area/danville-va/ 301!
+/gaming-trailer-danville-va/* /service-area/danville-va/ 301!
+/gaming-trailer-danville-va/ /service-area/danville-va/ 301!
+/mobile-arcade-danville-va/* /service-area/danville-va/ 301!
+/mobile-arcade-danville-va/ /service-area/danville-va/ 301!
+/video-game-truck-danville-va/* /service-area/danville-va/ 301!
+/video-game-truck-danville-va/ /service-area/danville-va/ 301!
+
+# Lexington, NC → /service-area/lexington-nc/
+
+/game-truck-lexington-nc/* /service-area/lexington-nc/ 301!
+/game-truck-lexington-nc/ /service-area/lexington-nc/ 301!
+/gaming-trailer-lexington-nc/* /service-area/lexington-nc/ 301!
+/gaming-trailer-lexington-nc/ /service-area/lexington-nc/ 301!
+/mobile-arcade-lexington-nc/* /service-area/lexington-nc/ 301!
+/mobile-arcade-lexington-nc/ /service-area/lexington-nc/ 301!
+/video-game-truck-lexington-nc/* /service-area/lexington-nc/ 301!
+/video-game-truck-lexington-nc/ /service-area/lexington-nc/ 301!
+
+# Kernersville, NC → /service-area/kernersville-nc/
+
+/game-truck-kernersville-nc/* /service-area/kernersville-nc/ 301!
+/game-truck-kernersville-nc/ /service-area/kernersville-nc/ 301!
+/gaming-trailer-kernersville-nc/* /service-area/kernersville-nc/ 301!
+/gaming-trailer-kernersville-nc/ /service-area/kernersville-nc/ 301!
+/mobile-arcade-kernersville-nc/* /service-area/kernersville-nc/ 301!
+/mobile-arcade-kernersville-nc/ /service-area/kernersville-nc/ 301!
+/video-game-truck-kernersville-nc/* /service-area/kernersville-nc/ 301!
+/video-game-truck-kernersville-nc/ /service-area/kernersville-nc/ 301!
+
+# Mebane, NC → /service-area/mebane-nc/
+
+/game-truck-mebane-nc/* /service-area/mebane-nc/ 301!
+/game-truck-mebane-nc/ /service-area/mebane-nc/ 301!
+/gaming-trailer-mebane-nc/* /service-area/mebane-nc/ 301!
+/gaming-trailer-mebane-nc/ /service-area/mebane-nc/ 301!
+/mobile-arcade-mebane-nc/* /service-area/mebane-nc/ 301!
+/mobile-arcade-mebane-nc/ /service-area/mebane-nc/ 301!
+/video-game-truck-mebane-nc/* /service-area/mebane-nc/ 301!
+/video-game-truck-mebane-nc/ /service-area/mebane-nc/ 301!
+
+# Thomasville, NC → /service-area/thomasville-nc/
+
+/game-truck-thomasville-nc/* /service-area/thomasville-nc/ 301!
+/game-truck-thomasville-nc/ /service-area/thomasville-nc/ 301!
+/gaming-trailer-thomasville-nc/* /service-area/thomasville-nc/ 301!
+/gaming-trailer-thomasville-nc/ /service-area/thomasville-nc/ 301!
+/mobile-arcade-thomasville-nc/* /service-area/thomasville-nc/ 301!
+/mobile-arcade-thomasville-nc/ /service-area/thomasville-nc/ 301!
+/video-game-truck-thomasville-nc/* /service-area/thomasville-nc/ 301!
+/video-game-truck-thomasville-nc/ /service-area/thomasville-nc/ 301!
+
+# Asheboro, NC → /service-area/asheboro-nc/
+
+/game-truck-asheboro-nc/* /service-area/asheboro-nc/ 301!
+/game-truck-asheboro-nc/ /service-area/asheboro-nc/ 301!
+/gaming-trailer-asheboro-nc/* /service-area/asheboro-nc/ 301!
+/gaming-trailer-asheboro-nc/ /service-area/asheboro-nc/ 301!
+/mobile-arcade-asheboro-nc/* /service-area/asheboro-nc/ 301!
+/mobile-arcade-asheboro-nc/ /service-area/asheboro-nc/ 301!
+/video-game-truck-asheboro-nc/* /service-area/asheboro-nc/ 301!
+/video-game-truck-asheboro-nc/ /service-area/asheboro-nc/ 301!
+
+# Clemmons, NC → /service-area/clemmons-nc/
+
+/game-truck-clemmons-nc/* /service-area/clemmons-nc/ 301!
+/game-truck-clemmons-nc/ /service-area/clemmons-nc/ 301!
+/gaming-trailer-clemmons-nc/* /service-area/clemmons-nc/ 301!
+/gaming-trailer-clemmons-nc/ /service-area/clemmons-nc/ 301!
+/mobile-arcade-clemmons-nc/* /service-area/clemmons-nc/ 301!
+/mobile-arcade-clemmons-nc/ /service-area/clemmons-nc/ 301!
+/video-game-truck-clemmons-nc/* /service-area/clemmons-nc/ 301!
+/video-game-truck-clemmons-nc/ /service-area/clemmons-nc/ 301!
+
+# Winston-Salem, NC → /service-area/winston-salem-nc/
+
+/game-truck-winston-salem-nc/* /service-area/winston-salem-nc/ 301!
+/game-truck-winston-salem-nc/ /service-area/winston-salem-nc/ 301!
+/gaming-trailer-winston-salem-nc/* /service-area/winston-salem-nc/ 301!
+/gaming-trailer-winston-salem-nc/ /service-area/winston-salem-nc/ 301!
+/mobile-arcade-winston-salem-nc/* /service-area/winston-salem-nc/ 301!
+/mobile-arcade-winston-salem-nc/ /service-area/winston-salem-nc/ 301!
+/video-game-truck-winston-salem-nc/* /service-area/winston-salem-nc/ 301!
+/video-game-truck-winston-salem-nc/ /service-area/winston-salem-nc/ 301!
+
+# High Point, NC → /service-area/high-point-nc/
+
+/game-truck-high-point-nc/* /service-area/high-point-nc/ 301!
+/game-truck-high-point-nc/ /service-area/high-point-nc/ 301!
+/gaming-trailer-high-point-nc/* /service-area/high-point-nc/ 301!
+/gaming-trailer-high-point-nc/ /service-area/high-point-nc/ 301!
+/mobile-arcade-high-point-nc/* /service-area/high-point-nc/ 301!
+/mobile-arcade-high-point-nc/ /service-area/high-point-nc/ 301!
+/video-game-truck-high-point-nc/* /service-area/high-point-nc/ 301!
+/video-game-truck-high-point-nc/ /service-area/high-point-nc/ 301!
+/video-game-events-high-point-nc/* /service-area/high-point-nc/ 301!
+/video-game-events-high-point-nc/ /service-area/high-point-nc/ 301!
+
+# Kannapolis, NC → /service-area/kannapolis-nc/
+
+/game-truck-kannapolis-nc/* /service-area/kannapolis-nc/ 301!
+/game-truck-kannapolis-nc/ /service-area/kannapolis-nc/ 301!
+/gaming-trailer-kannapolis-nc/* /service-area/kannapolis-nc/ 301!
+/gaming-trailer-kannapolis-nc/ /service-area/kannapolis-nc/ 301!
+/mobile-arcade-kannapolis-nc/* /service-area/kannapolis-nc/ 301!
+/mobile-arcade-kannapolis-nc/ /service-area/kannapolis-nc/ 301!
+/video-game-truck-kannapolis-nc/* /service-area/kannapolis-nc/ 301!
+/video-game-truck-kannapolis-nc/ /service-area/kannapolis-nc/ 301!

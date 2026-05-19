@@ -1,0 +1,180 @@
+---
+description: "See where AFK Mobile Arcade travels to for events and parties in Greensboro, NC and surrounding areas."
+image: "OPTIONAL - If an image path is specified here, it will be used for that page's OG image. Useful for blog posts (implemented as standard with this kit)"
+eleventyComputed:
+  title: "{{ page.fileSlug | titleCase }} | {{ client.name }} | {{ client.address.city }}, {{ client.address.state }}"
+  permalink: "/{{ page.fileSlug | slugify }}/"
+---
+
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    
+    <link rel="stylesheet" href="/assets/css/{{ page.fileSlug }}.css">
+
+    <!-- Any page-specific tags that belong in the <head> -->
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Service Area</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/service-area/" class="cs-link cs-active">Service Area</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 640, height: 844 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2048, height: 720 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/c27.png" | resize({ width: 2500, height: 716 }) | png %}" alt="AFK Mobile Arcade trailer parked in neon-lit cityscape" width="1920" height="550" loading="lazy" decoding="async">
+        </picture>
+    </div>
+    
+    <!-- ============================================ -->
+    <!--                Why Choose Us                 -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-1840">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c18.jpg" | resize({ width: 424, height: 628 }) | avif %}" type="image/avif">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c18.jpg" | resize({ width: 588, height: 994 }) | avif %}" type="image/avif">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c18.jpg" | resize({ width: 920, height: 1136 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/c18.jpg" | resize({ width: 920, height: 1136 }) | jpeg %}" alt="Four smiling kids holding controllers in gaming trailer" width="460" height="568" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-frame-accent" aria-hidden="true"></div>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">Where We Roll</span>
+                <h2 class="cs-title">Serving Greensboro and Surrounding Communities</h2>
+                <p class="cs-text">
+                    From Greensboro to Winston-Salem, Raleigh to Charlotte, we travel across North Carolina to bring the ultimate mobile gaming experience right to your event.
+                </p>
+                <h3 class="cs-h3">Areas We Travel To</h3>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Archdale
+                    </li>
+                        <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Durham
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        High Point
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Asheboro
+                    </li>
+                        <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Eden
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Hillsborough
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Burlington
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Elkin
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Jamestown
+                    </li>
+                        <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Chapel Hill
+                    </li>
+                        <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Elon
+                    </li>
+                        <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Julian
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Charlotte
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Gibsonville
+                    </li>
+                        <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Kernersville
+                    </li>
+                        <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Clemmons
+                    </li>
+                        <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        Greensboro
+                    </li>
+                    <li class="cs-li">
+                        <img class="cs-check-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="checkmark" width="20" height="20">
+                        King
+                    </li>                    
+                </ul>
+                <a class="cs-button-solid" href="">Check If We Serve Your Area</a>
+            </div>
+        </div>
+        
+        <picture class="cs-top-shape">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 1172 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 640, height: 1172 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 572 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2048, height: 572 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 526 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 526 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/top-shape.png" | resize({ width: 2500, height: 526 }) | png %}" alt="" width="1920" height="404" loading="lazy" decoding="async">
+        </picture>
+
+        <picture class="cs-bottom-shape">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 640, height: 1172 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 640, height: 1172 }) | png %}" type="image/png">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2048, height: 572 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2048, height: 572 }) | png %}" type="image/png">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 526 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 526 }) | png %}" type="image/png">
+            <img src="{% getUrl "/assets/images/bottom-shape.png" | resize({ width: 2500, height: 526 }) | png %}" alt="" width="1920" height="404" loading="lazy" decoding="async">
+        </picture>
+            <img class="cs-graphic" src="/assets/images/graphic-2.png" alt="arcade console" aria-hidden="true" width="326" height="190" />
+    </section>
+
+    {% include 'sections/cta.html' %} 
+
+{% endblock %}
